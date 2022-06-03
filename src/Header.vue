@@ -66,6 +66,7 @@ export default {
   position: relative;
   box-sizing: border-box;
   display: flex;
+  border-radius: 8px 8px 0px 0px;
 }
 
 .sc-header--img {

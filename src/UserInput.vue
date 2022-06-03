@@ -41,14 +41,14 @@
       ></div>
       <div class="sc-user-input--buttons">
         <div v-if="showEmoji && !isEditing" class="sc-user-input--button">
-          <EmojiIcon :on-emoji-picked="_handleEmojiPicked" :color="colors.userInput.text" />
+          <EmojiIcon :on-emoji-picked="_handleEmojiPicked" :color="colors.userInput.icon" />
         </div>
         <div v-if="showFile && !isEditing" class="sc-user-input--button">
-          <FileIcons :on-change="_handleFileSubmit" :color="colors.userInput.text" />
+          <FileIcons :on-change="_handleFileSubmit" :color="colors.userInput.icon" />
         </div>
         <div v-if="isEditing" class="sc-user-input--button">
           <UserInputButton
-            :color="colors.userInput.text"
+            :color="colors.userInput.icon"
             tooltip="Cancel"
             @click.native.prevent="_editFinish"
           >
@@ -58,7 +58,7 @@
         <div class="sc-user-input--button">
           <UserInputButton
             v-if="isEditing"
-            :color="colors.userInput.text"
+            :color="colors.userInput.icon"
             tooltip="Edit"
             @click.native.prevent="_editText"
           >
@@ -66,7 +66,7 @@
           </UserInputButton>
           <UserInputButton
             v-else
-            :color="colors.userInput.text"
+            :color="colors.userInput.icon"
             tooltip="Send"
             @click.native.prevent="_submitText"
           >

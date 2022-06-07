@@ -18,7 +18,7 @@ export default {
     },
     messageColors: {
       type: Object,
-      required: true
+      required: false
     }
   }
 }

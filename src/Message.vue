@@ -52,7 +52,6 @@
       <SystemMessage
         v-else-if="message.type === 'system'"
         :data="message.data"
-        :message-colors="messageColors"
       >
         <slot name="system-message-body" :message="message.data"> </slot>
       </SystemMessage>

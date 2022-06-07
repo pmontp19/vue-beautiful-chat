@@ -158,12 +158,12 @@ export default {
   right: 25px;
   bottom: 100px;
   box-sizing: border-box;
-  box-shadow: 0px 7px 40px 2px rgba(148, 149, 150, 0.1);
+  box-shadow: 6px 6px 24px rgba(0, 0, 0, 0.5);
   background: white;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border-radius: 10px;
+  border-radius: 20px;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   animation: fadeIn;
   animation-duration: 0.3s;

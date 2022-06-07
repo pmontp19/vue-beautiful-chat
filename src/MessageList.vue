@@ -120,6 +120,5 @@ export default {
   overflow-y: auto;
   background-size: 100%;
   padding: 40px 20px;
-  background: linear-gradient(180deg, #FFFFFF 76.68%, #F1F7FF 100%);
 }
 </style>

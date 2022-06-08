@@ -2,7 +2,7 @@
   <div
     ref="scrollList"
     class="sc-message-list"
-    :style="{backgroundColor: colors.messageList.bg}"
+    :style="{background: colors.messageList.bg}"
     @scroll="handleScroll"
   >
     <Message

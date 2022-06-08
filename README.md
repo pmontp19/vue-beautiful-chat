@@ -67,7 +67,8 @@ Vue.use(Chat)
       :disableUserListToggle="false"
       :messageStyling="messageStyling"
       @onType="handleOnType"
-      @edit="editMessage" />
+      @edit="editMessage"
+      @option="handleOption" />
   </div>
 </template>
 ```
@@ -91,7 +92,16 @@ export default {
       titleImageUrl: 'https://a.slack-edge.com/66f9/img/avatars-teams/ava_0001-34.png',
       messageList: [
           { type: 'text', author: `me`, data: { text: `Say yes!` } },
-          { type: 'text', author: `user1`, data: { text: `No.` } }
+          { type: 'text', author: `user1`, data: { text: `No.` } },
+          { type: 'text', author: `user1`, data: { text: `No.`, options: [
+            { text: 'option 1',
+              value: 'option1'
+            },
+            { text: 'option 2',
+              value: 'option2'
+            }
+            ]}
+          }
       ], // the list of the messages to show, can be paginated and adjusted dynamically
       newMessagesCount: 0,
       isChatOpen: false, // to determine whether the chat window should be open or closed
@@ -194,6 +204,7 @@ For more detailed examples see the demo folder.
 |-----|--------|---------------|
 | onType | undefined | Fires when user types on the message input |
 | edit | `message` | Fires after user edited message |
+| option | `optionPicked` | Fires when user chooses an option |
 
 #### Slots
 
@@ -281,6 +292,25 @@ Message objects are rendered differently depending on their type. Currently, onl
       name: 'file.mp3',
       url: 'https:123.rf/file.mp3'
     }
+  }
+}
+
+{
+  author: 'support',
+  type: 'option',
+  id: 1, // or text '1'
+  data: {
+    text: 'Question to ask',
+    options: [
+      {
+        text: 'opcion 1',
+        value: 'option1'
+      },
+      {
+        text: 'opcion 2',
+        value: 'option2'
+      }
+    ]
   }
 }
 ```

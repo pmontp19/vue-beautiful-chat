@@ -55,7 +55,6 @@ export default {
   watch: {
     optionPicked: function (newVal, oldVal) {
       if (newVal !== oldVal) {
-        this.isConsolidated = true
         this.$emit('option', this.optionPicked)
       }
     }

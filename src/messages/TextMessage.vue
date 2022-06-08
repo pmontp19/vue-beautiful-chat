@@ -145,7 +145,6 @@ export default {
   background-color: #f4f7f9;
   margin-right: 40px;
   border-radius: 0px 24px 24px 24px;
-
 }
 
 a.chatLink {

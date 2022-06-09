@@ -29,7 +29,7 @@
         ref="userInput"
         role="button"
         tabIndex="0"
-        contentEditable="true"
+        :contentEditable="contentEditable"
         :placeholder="placeholder"
         class="sc-user-input--text"
         :style="{color: colors.userInput.text}"
@@ -132,6 +132,10 @@ export default {
     colors: {
       type: Object,
       required: true
+    },
+    contentEditable: {
+      type: Boolean,
+      default: () => true
     }
   },
   data() {

@@ -48,6 +48,7 @@
     </MessageList>
     <UserInput
       v-if="!showUserList"
+      :contentEditable="contentEditable"
       :show-emoji="showEmoji"
       :on-submit="onUserInputSubmit"
       :show-file="showFile"
@@ -128,6 +129,10 @@ export default {
     showLoader: {
       type: Boolean,
       default: () => false
+    },
+    contentEditable: {
+      type: Boolean,
+      default: () => true
     }
   },
   data() {

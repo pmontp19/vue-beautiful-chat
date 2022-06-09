@@ -18,6 +18,7 @@
       :on-user-input-submit="onMessageWasSent"
       :participants="participants"
       :title="chatWindowTitle"
+      :contentEditable="contentEditable"
       :is-open="isOpen"
       :show-emoji="showEmoji"
       :show-file="showFile"
@@ -164,6 +165,10 @@ export default {
     showTypingIndicator: {
       type: String,
       default: () => ''
+    },
+    contentEditable: {
+      type: Boolean,
+      default: () => true
     },
     colors: {
       type: Object,

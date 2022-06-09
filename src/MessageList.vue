@@ -12,6 +12,7 @@
       :user="profile(message.author)"
       :colors="colors"
       :message-styling="messageStyling"
+      :loading="loading"
       @remove="$emit('remove', message)"
       @option="$emit('option', $event)"
     >
@@ -78,7 +79,11 @@ export default {
     messageStyling: {
       type: Boolean,
       required: true
-    }
+    },
+    process: {
+      type: Object,
+      required: false
+    },
   },
   computed: {
     defaultChatIcon() {

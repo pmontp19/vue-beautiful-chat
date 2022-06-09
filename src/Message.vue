@@ -80,6 +80,30 @@
         </template>
       </OptionMessage>
 
+      <ProcessMessage
+        v-if="message.type === 'options'"
+        :message="message"
+        :message-colors="messageColors"
+        :message-styling="messageStyling"
+        @remove="$emit('remove')"
+        @option="$emit('option', $event)"
+      >
+        <template v-slot:default="scopedProps">
+          <slot
+            name="text-message-body"
+            :message="scopedProps.message"
+            :messageText="scopedProps.messageText"
+            :messageColors="scopedProps.messageColors"
+            :me="scopedProps.me"
+          >
+          </slot>
+        </template>
+        <template v-slot:text-message-toolbox="scopedProps">
+          <slot name="text-message-toolbox" :message="scopedProps.message" :me="scopedProps.me">
+          </slot>
+        </template>
+      </ProcessMessage>
+
     </div>
   </div>
 </template>
@@ -91,6 +115,7 @@ import EmojiMessage from './messages/EmojiMessage.vue'
 import TypingMessage from './messages/TypingMessage.vue'
 import SystemMessage from './messages/SystemMessage.vue'
 import OptionMessage from './messages/OptionMessage.vue'
+import ProcessMessage from './messages/ProcessMessage.vue'
 import chatIcon from './assets/chat-icon.svg'
 
 export default {
@@ -101,7 +126,8 @@ export default {
     TypingMessage,
     SystemMessage,
     OptionMessage,
-    OptionMessage
+    OptionMessage,
+    ProcessMessage
 },
   props: {
     message: {

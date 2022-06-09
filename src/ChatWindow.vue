@@ -20,7 +20,7 @@
       :colors="colors"
       :always-scroll-to-bottom="alwaysScrollToBottom"
       :message-styling="messageStyling"
-      :show-loader="showLoader"
+      :process="process"
       @scrollToTop="$emit('scrollToTop')"
       @remove="$emit('remove', $event)"
       @option="$emit('option', $event)"
@@ -126,9 +126,9 @@ export default {
       type: Boolean,
       required: true
     },
-    showLoader: {
-      type: Boolean,
-      default: () => false
+    loading: {
+      type: Object,
+      required: false
     },
     contentEditable: {
       type: Boolean,

@@ -20,6 +20,7 @@
       :colors="colors"
       :always-scroll-to-bottom="alwaysScrollToBottom"
       :message-styling="messageStyling"
+      :show-loader="showLoader"
       @scrollToTop="$emit('scrollToTop')"
       @remove="$emit('remove', $event)"
       @option="$emit('option', $event)"
@@ -49,7 +50,6 @@
       v-if="!showUserList"
       :show-emoji="showEmoji"
       :on-submit="onUserInputSubmit"
-      :suggestions="getSuggestions()"
       :show-file="showFile"
       :placeholder="placeholder"
       :colors="colors"
@@ -124,6 +124,10 @@ export default {
     messageStyling: {
       type: Boolean,
       required: true
+    },
+    showLoader: {
+      type: Boolean,
+      default: () => false
     }
   },
   data() {
@@ -142,9 +146,6 @@ export default {
     handleUserListToggle(showUserList) {
       this.showUserList = showUserList
     },
-    getSuggestions() {
-      return this.messages.length > 0 ? this.messages[this.messages.length - 1].suggestions : []
-    }
   }
 }
 </script>

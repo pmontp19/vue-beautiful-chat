@@ -27,6 +27,7 @@
       :colors="colors"
       :always-scroll-to-bottom="alwaysScrollToBottom"
       :message-styling="messageStyling"
+      :show-loader="showLoader"
       @close="close"
       @scrollToTop="$emit('scrollToTop')"
       @onType="$emit('onType')"
@@ -127,6 +128,10 @@ export default {
     showHeader: {
       type: Boolean,
       default: true
+    },
+    showLoader: {
+      type: Boolean,
+      default: false
     },
     participants: {
       type: Array,

@@ -1,6 +1,5 @@
 <template>
   <div>
-    <Suggestions :suggestions="suggestions" :colors="colors" @sendSuggestion="_submitSuggestion" />
     <div
       v-if="file"
       class="file-container"
@@ -82,7 +81,6 @@
 import EmojiIcon from './icons/EmojiIcon.vue'
 import FileIcons from './icons/FileIcons.vue'
 import UserInputButton from './UserInputButton.vue'
-import Suggestions from './Suggestions.vue'
 import FileIcon from './assets/file.svg'
 import CloseIconSvg from './assets/close.svg'
 import store from './store/'
@@ -95,7 +93,6 @@ export default {
     EmojiIcon,
     FileIcons,
     UserInputButton,
-    Suggestions,
     IconCross,
     IconOk,
     IconSend
@@ -119,10 +116,6 @@ export default {
     showEmoji: {
       type: Boolean,
       default: () => false
-    },
-    suggestions: {
-      type: Array,
-      default: () => []
     },
     showFile: {
       type: Boolean,
@@ -199,9 +192,6 @@ export default {
       this.$nextTick(() => {
         this.$refs.userInput.focus()
       })
-    },
-    _submitSuggestion(suggestion) {
-      this.onSubmit({author: 'me', type: 'text', data: {text: suggestion}})
     },
     _checkSubmitSuccess(success) {
       if (Promise !== undefined) {

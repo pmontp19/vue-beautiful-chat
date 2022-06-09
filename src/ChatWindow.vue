@@ -20,7 +20,6 @@
       :colors="colors"
       :always-scroll-to-bottom="alwaysScrollToBottom"
       :message-styling="messageStyling"
-      :process="process"
       @scrollToTop="$emit('scrollToTop')"
       @remove="$emit('remove', $event)"
       @option="$emit('option', $event)"
@@ -125,10 +124,6 @@ export default {
     messageStyling: {
       type: Boolean,
       required: true
-    },
-    loading: {
-      type: Object,
-      required: false
     },
     contentEditable: {
       type: Boolean,

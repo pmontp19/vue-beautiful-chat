@@ -312,6 +312,14 @@ Message objects are rendered differently depending on their type. Currently, onl
       }
     ]
   }
+
+  {
+    type: 'process',
+    data: { 
+      text: 'Estamos avisando a tu asesor', 
+      loading: true 
+    }
+  }
 }
 ```
 

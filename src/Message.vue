@@ -4,13 +4,14 @@
       class="sc-message--content"
       :class="{
         sent: message.author === 'me',
-        received: message.author !== 'me' && message.type !== 'system',
-        system: message.type === 'system'
+        received: message.author !== 'me' && message.type !== 'system' && !message.type === 'process',
+        system: message.type === 'system',
+        process: message.type === 'process'
       }"
     >
       <slot name="user-avatar" :message="message" :user="user">
         <div
-          v-if="message.type !== 'system' && authorName && authorName !== 'me'"
+          v-if="message.type !== 'system' && message.type !== 'process' && authorName && authorName !== 'me'"
           v-tooltip="authorName"
           :title="authorName"
           class="sc-message--avatar"
@@ -81,27 +82,10 @@
       </OptionMessage>
 
       <ProcessMessage
-        v-if="message.type === 'options'"
+        v-if="message.type === 'process'"
         :message="message"
-        :message-colors="messageColors"
-        :message-styling="messageStyling"
-        @remove="$emit('remove')"
-        @option="$emit('option', $event)"
+        :loading="message.data.loading"
       >
-        <template v-slot:default="scopedProps">
-          <slot
-            name="text-message-body"
-            :message="scopedProps.message"
-            :messageText="scopedProps.messageText"
-            :messageColors="scopedProps.messageColors"
-            :me="scopedProps.me"
-          >
-          </slot>
-        </template>
-        <template v-slot:text-message-toolbox="scopedProps">
-          <slot name="text-message-toolbox" :message="scopedProps.message" :me="scopedProps.me">
-          </slot>
-        </template>
       </ProcessMessage>
 
     </div>
@@ -196,7 +180,7 @@ export default {
   justify-content: flex-end;
 }
 
-.sc-message--content.system {
+.sc-message--content.system, .sc-message--content.process {
   justify-content: center;
 }
 

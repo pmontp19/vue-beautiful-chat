@@ -1,17 +1,16 @@
 <template>
   <div>
     <div class="loader"></div>
-    <p><slot></slot></p>
   </div>
 </template>
 
 <style scoped>
 .loader {
-  border: 16px solid #bed9ff;
+  border: 6px solid #bed9ff;
   border-radius: 50%;
-  border-top: 16px solid #589bf6;
-  width: 120px;
-  height: 120px;
+  border-top: 6px solid #2A6BF6;
+  width: 48px;
+  height: 48px;
   -webkit-animation: spin 2s linear infinite; /* Safari */
   animation: spin 1s linear infinite;
 }

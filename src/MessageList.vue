@@ -44,16 +44,19 @@
       :colors="colors"
       :message-styling="messageStyling"
     />
+    <Loader v-if="showLoader">Buscando</Loader>
   </div>
 </template>
 
 <script>
 import Message from './Message.vue'
 import chatIcon from './assets/chat-icon.svg'
+import Loader from './components/Loader.vue'
 
 export default {
   components: {
-    Message
+    Message,
+    Loader
   },
   props: {
     participants: {

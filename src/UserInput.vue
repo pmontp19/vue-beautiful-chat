@@ -30,7 +30,7 @@
         role="button"
         tabIndex="0"
         :contentEditable="contentEditable"
-        :placeholder="placeholder"
+        :placeholder="getPlaceholder"
         class="sc-user-input--text"
         :style="{color: colors.userInput.text}"
         @focus="setInputActive(true)"
@@ -150,6 +150,9 @@ export default {
     },
     isEditing() {
       return store.state.editMessage && store.state.editMessage.id
+    },
+    getPlaceholder() {
+      return this.contentEditable ? this.placeholder : ''
     }
   },
   watch: {

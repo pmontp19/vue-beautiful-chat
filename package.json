@@ -1,6 +1,6 @@
 {
   "name": "@pmontp19/vue-beautiful-chat",
-  "version": "3.3.3",
+  "version": "3.3.4",
   "description": "A simple and beautiful Vue chat component backend agnostic.",
   "main": "./dist/vue-beautiful-chat.umd.min.js",
   "repository": "https://github.com/pmontp19/vue-beautiful-chat.git",

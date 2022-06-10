@@ -4,14 +4,15 @@
       class="sc-message--content"
       :class="{
         sent: message.author === 'me',
-        received: message.author !== 'me' && message.type !== 'system' && !message.type === 'process',
+        received: message.author !== 'me' && message.type !== 'system' && !message.type === 'process' && !message.type === 'welcome',
         system: message.type === 'system',
-        process: message.type === 'process'
+        process: message.type === 'process',
+        welcome: message.type === 'welcome'
       }"
     >
       <slot name="user-avatar" :message="message" :user="user">
         <div
-          v-if="message.type !== 'system' && message.type !== 'process' && authorName && authorName !== 'me'"
+          v-if="message.type !== 'system' && message.type !== 'process' && message.type !== 'welcome' && authorName && authorName !== 'me'"
           v-tooltip="authorName"
           :title="authorName"
           class="sc-message--avatar"
@@ -88,6 +89,12 @@
       >
       </ProcessMessage>
 
+      <WelcomeMessage
+        v-if="message.type === 'welcome'"
+        :data="message.data"
+        >
+        </WelcomeMessage>
+
     </div>
   </div>
 </template>
@@ -100,6 +107,7 @@ import TypingMessage from './messages/TypingMessage.vue'
 import SystemMessage from './messages/SystemMessage.vue'
 import OptionMessage from './messages/OptionMessage.vue'
 import ProcessMessage from './messages/ProcessMessage.vue'
+import WelcomeMessage from './messages/WelcomeMessage.vue'
 import chatIcon from './assets/chat-icon.svg'
 
 export default {
@@ -111,7 +119,9 @@ export default {
     SystemMessage,
     OptionMessage,
     OptionMessage,
-    ProcessMessage
+    ProcessMessage,
+    WelcomeMessage,
+    WelcomeMessage
 },
   props: {
     message: {
@@ -180,7 +190,7 @@ export default {
   justify-content: flex-end;
 }
 
-.sc-message--content.system, .sc-message--content.process {
+.sc-message--content.system, .sc-message--content.process, .sc-message--content.welcome {
   justify-content: center;
 }
 
@@ -202,13 +212,13 @@ export default {
 .sc-message--meta {
   font-size: xx-small;
   margin-bottom: 0px;
-  color: white;
+  color: #77838F;
   text-align: center;
 }
 
 @media (max-width: 450px) {
   .sc-message {
-    width: 80%;
+    // width: 80%;
   }
 }
 

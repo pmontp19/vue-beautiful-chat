@@ -32,7 +32,6 @@ export default {
   border-radius: 6px;
   white-space: pre-wrap;
   -webkit-font-smoothing: subpixel-antialiased;
-  opacity: 0.55;
   max-width: 300px;
   font-weight: 700;
   font-size: 12px;

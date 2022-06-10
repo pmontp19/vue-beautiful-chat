@@ -320,6 +320,11 @@ Message objects are rendered differently depending on their type. Currently, onl
       loading: true 
     }
   }
+
+  {
+    type: 'welcome',
+    data: { text: 'Marcos se acaba de unir a la conversación', meta: '10.56', imageUrl: 'https://via.placeholder.com/150' }
+  }
 }
 ```
 

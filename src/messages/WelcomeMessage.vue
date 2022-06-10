@@ -23,9 +23,10 @@ export default {
 <style scoped>
 .sc-message--welcome {
   display: flex;
+  position: relative;
   align-items: center;
   flex-direction: column;
-  padding: 8px 20px;
+  padding: 30px 20px 8px;
   border: 1px solid #589BF6;
   border-radius: 24px;  white-space: pre-wrap;
   -webkit-font-smoothing: subpixel-antialiased;
@@ -33,13 +34,17 @@ export default {
   font-weight: 400;
   font-size: 13px;
   line-height: 20px;
+  margin-top: 30px;
 }
 .sc-message--img {
   align-self: center;
+  position: absolute;
+  top: -29px;
   max-width: 55px;
   border: 2px solid #589BF6;
   border-radius: 200px;
   background-color: white;
+  position: absolute;
 }
 .sc-message--meta {
   font-size: x-small;

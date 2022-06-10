@@ -21,6 +21,7 @@
       :contentEditable="contentEditable"
       :is-open="isOpen"
       :show-emoji="showEmoji"
+      :show-launcher="showLauncher"
       :show-file="showFile"
       :show-header="showHeader"
       :placeholder="placeholder"

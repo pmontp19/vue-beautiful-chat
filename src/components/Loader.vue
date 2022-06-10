@@ -8,7 +8,7 @@
 .loader {
   border: 6px solid #bed9ff;
   border-radius: 50%;
-  border-top: 6px solid #2A6BF6;
+  border-top: 6px solid #2a6bf6;
   width: 48px;
   height: 48px;
   -webkit-animation: spin 2s linear infinite; /* Safari */

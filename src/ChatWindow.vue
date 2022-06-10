@@ -1,5 +1,5 @@
 <template>
-  <div class="sc-chat-window" :class="{opened: isOpen, closed: !isOpen}">
+  <div class="sc-chat-window" :class="{opened: isOpen, closed: !isOpen, noLauncher: !showLauncher}">
     <Header
       v-if="showHeader"
       :title="title"
@@ -128,6 +128,10 @@ export default {
     contentEditable: {
       type: Boolean,
       default: () => true
+    },
+    showLauncher: {
+      type: Boolean,
+      default: true
     }
   },
   data() {
@@ -151,6 +155,7 @@ export default {
 </script>
 
 <style scoped>
+
 .sc-chat-window {
   width: 370px;
   height: calc(100% - 120px);
@@ -169,6 +174,10 @@ export default {
   animation: fadeIn;
   animation-duration: 0.3s;
   animation-timing-function: ease-in-out;
+}
+.noLauncher {
+  bottom: 0px;
+  border-radius: 8px 8px 0px 0px
 }
 
 .sc-chat-window.closed {

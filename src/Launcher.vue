@@ -183,7 +183,7 @@ export default {
         'bg' in c.receivedMessage &&
         'text' in c.receivedMessage &&
         'userInput' in c &&
-        'bg' in c.userInput &&
+        'icon' in c.userInput &&
         'text' in c.userInput,
       default: function () {
         return {
@@ -206,7 +206,7 @@ export default {
             text: '#ffffff'
           },
           userInput: {
-            bg: '#f4f7f9',
+            icon: '#589BF6',
             text: '#565867'
           }
         }

@@ -4,7 +4,7 @@
       class="sc-message--content"
       :class="{
         sent: message.author === 'me',
-        received: message.author !== 'me' && message.type !== 'system' && !message.type === 'process' && !message.type === 'welcome',
+        received: message.author !== 'me' && message.type !== 'system' && message.type !== 'process' && message.type !== 'welcome',
         system: message.type === 'system',
         process: message.type === 'process',
         welcome: message.type === 'welcome'
@@ -142,6 +142,9 @@ export default {
     }
   },
   computed: {
+    class () {
+      return this.message.author !== 'me' && this.message.type !== 'system' && !this.message.type === 'process' && !this.message.type === 'welcome'
+    },
     authorName() {
       return this.user && this.user.name
     },
@@ -149,6 +152,12 @@ export default {
       return (this.user && this.user.imageUrl) || chatIcon
     },
     messageColors() {
+      if (this.message.author.toLowerCase().includes('bot') && this.message.type !== 'typing') {
+        return {
+          color: this.colors.receivedMessage.bot_text,
+          backgroundColor: this.colors.receivedMessage.bot_bg
+        }
+      }
       return this.message.author === 'me' ? this.sentColorsStyle : this.receivedColorsStyle
     },
     receivedColorsStyle() {

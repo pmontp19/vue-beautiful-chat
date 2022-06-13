@@ -181,6 +181,8 @@ export default {
         'text' in c.sentMessage &&
         'receivedMessage' in c &&
         'bg' in c.receivedMessage &&
+        'bot_bg' in c.receivedMessage &&
+        'bot_text' in c.receivedMessage &&
         'text' in c.receivedMessage &&
         'userInput' in c &&
         'icon' in c.userInput &&
@@ -202,7 +204,9 @@ export default {
             text: '#ffffff'
           },
           receivedMessage: {
-            bg: '#f4f7f9',
+            bg: '#509BF7',
+            bot_bg: '#f4f7f9',
+            bot_text: '#77838F',
             text: '#ffffff'
           },
           userInput: {

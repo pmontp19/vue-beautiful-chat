@@ -132,10 +132,8 @@
       TypingMessage,
       SystemMessage,
       OptionMessage,
-      OptionMessage,
       ProcessMessage,
       WelcomeMessage,
-      WelcomeMessage
     },
     props: {
       message: {

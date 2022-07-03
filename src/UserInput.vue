@@ -162,6 +162,7 @@
       }
     },
     watch: {
+      // eslint-disable-next-line no-unused-vars
       editMessageId(m) {
         if (
           store.state.editMessage != null &&
@@ -260,6 +261,7 @@
           )
         }
       },
+      // eslint-disable-next-line no-unused-vars
       _editText(event) {
         const text = this.$refs.userInput.textContent
         if (text && text.length) {

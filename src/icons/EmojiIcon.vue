@@ -55,6 +55,7 @@
       }
     },
     methods: {
+      // eslint-disable-next-line no-unused-vars
       _openPicker(e) {
         this.isActive = !this.isActive
       },

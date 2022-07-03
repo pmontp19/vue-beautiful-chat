@@ -58,12 +58,10 @@
 <script>
   import Message from './Message.vue'
   import chatIcon from './assets/chat-icon.svg'
-  import Loader from './components/Loader.vue'
 
   export default {
     components: {
       Message,
-      Loader
     },
     props: {
       participants: {

@@ -34,9 +34,6 @@
 
 <script>
   import { mapState } from '../store/'
-  import IconBase from './../components/IconBase.vue'
-  import IconEdit from './../components/icons/IconEdit.vue'
-  import IconCross from './../components/icons/IconCross.vue'
   import escapeGoat from 'escape-goat'
   import Autolinker from 'autolinker'
   import store from '../store/'
@@ -44,11 +41,7 @@
   const fmt = require('msgdown')
 
   export default {
-    components: {
-      IconBase,
-      IconCross,
-      IconEdit
-    },
+    components: { },
     props: {
       message: {
         type: Object,
@@ -67,13 +60,6 @@
       return {
         optionPicked: null,
         isConsolidated: false
-      }
-    },
-    watch: {
-      optionPicked: function (newVal, oldVal) {
-        if (newVal !== oldVal) {
-          this.$emit('option', this.optionPicked)
-        }
       }
     },
     computed: {
@@ -95,6 +81,13 @@
         )
       },
       ...mapState(['showDeletion', 'showEdition'])
+    },
+    watch: {
+      optionPicked: function (newVal, oldVal) {
+        if (newVal !== oldVal) {
+          this.$emit('option', this.optionPicked)
+        }
+      }
     },
     methods: {
       edit() {

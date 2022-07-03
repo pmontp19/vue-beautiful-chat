@@ -17,7 +17,7 @@ function mapState(keys2) {
   return map;
 }
 var CloseIcon$1 = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAfCAMAAACxiD++AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAtUExURUxpcf///////////////////////////////////////////////////////3EAnbYAAAAOdFJOUwADZ66SoQjEhnS7/gsNGQL7+wAAAKtJREFUKM+F01sOhCAQRNESFV/I/pc70Og0YJfyJbmHhBAbGGYHstw8IPV4EOGOmERYIhGpxyUAJxHSz/xlC+1FxE64qB1yj1ZID7oXsel+63ovnj2JXUXue+hvrcLugL+EdG+9XBG8X+Kl34J3YM1g/egvIvdx5EK691RIz78YEXdnQrst6m6JqemXmNo+D/WJNAyVePZWWL0WdlfB+l+UAQQReaAc65DB/wGsZgzLN0IQWAAAAABJRU5ErkJggg==";
-var Header_vue_vue_type_style_index_0_scoped_true_lang = /* @__PURE__ */ (() => ".sc-header[data-v-6313a8c0]{min-height:75px;padding:10px;box-shadow:0 1px 4px #0003;position:relative;box-sizing:border-box;display:flex;border-radius:8px 8px 0 0}.sc-header--img[data-v-6313a8c0]{border-radius:50%;align-self:center;padding:5px;max-width:55px}.sc-header--title[data-v-6313a8c0]{align-self:center;padding:10px;flex:1;user-select:none;font-size:20px}.sc-header--title.enabled[data-v-6313a8c0]{cursor:pointer;border-radius:5px}.sc-header--title.enabled[data-v-6313a8c0]:hover{box-shadow:0 2px 5px #0000011a}.sc-header--close-button[data-v-6313a8c0]{width:40px;align-self:center;height:40px;margin-right:10px;box-sizing:border-box;cursor:pointer;border-radius:5px;margin-left:auto}.sc-header--close-button[data-v-6313a8c0]:hover{box-shadow:0 2px 5px #0000011a}.sc-header--close-button img[data-v-6313a8c0]{width:100%;height:100%;padding:13px;box-sizing:border-box}@media (max-width: 450px){.sc-header[data-v-6313a8c0]{border-radius:0}}\n")();
+var Header_vue_vue_type_style_index_0_scoped_true_lang = /* @__PURE__ */ (() => ".sc-header[data-v-72690a78]{min-height:75px;padding:10px;box-shadow:0 1px 4px #0003;position:relative;box-sizing:border-box;display:flex;border-radius:8px 8px 0 0}.sc-header--img[data-v-72690a78]{border-radius:50%;align-self:center;padding:5px;max-width:55px}.sc-header--title[data-v-72690a78]{align-self:center;padding:10px;flex:1;user-select:none;font-size:20px}.sc-header--title.enabled[data-v-72690a78]{cursor:pointer;border-radius:5px}.sc-header--title.enabled[data-v-72690a78]:hover{box-shadow:0 2px 5px #0000011a}.sc-header--close-button[data-v-72690a78]{width:40px;align-self:center;height:40px;margin-right:10px;box-sizing:border-box;cursor:pointer;border-radius:5px;margin-left:auto}.sc-header--close-button[data-v-72690a78]:hover{box-shadow:0 2px 5px #0000011a}.sc-header--close-button img[data-v-72690a78]{width:100%;height:100%;padding:13px;box-sizing:border-box}@media (max-width: 450px){.sc-header[data-v-72690a78]{border-radius:0}}\n")();
 var _export_sfc = (sfc, props) => {
   const target = sfc.__vccOpts || sfc;
   for (const [key, val] of props) {
@@ -98,8 +98,8 @@ function _sfc_render$o(_ctx, _cache, $props, $setup, $data, $options) {
     ])) : createCommentVNode("", true)
   ], 4);
 }
-var Header = /* @__PURE__ */ _export_sfc(_sfc_main$o, [["render", _sfc_render$o], ["__scopeId", "data-v-6313a8c0"]]);
-var IconBase_vue_vue_type_style_index_0_scoped_true_lang = /* @__PURE__ */ (() => "svg[data-v-50157217]{display:block}\n")();
+var Header = /* @__PURE__ */ _export_sfc(_sfc_main$o, [["render", _sfc_render$o], ["__scopeId", "data-v-72690a78"]]);
+var IconBase_vue_vue_type_style_index_0_scoped_true_lang = /* @__PURE__ */ (() => "svg[data-v-659ca2d2]{display:block}\n")();
 const _sfc_main$n = {
   props: {
     iconName: {
@@ -145,7 +145,7 @@ function _sfc_render$n(_ctx, _cache, $props, $setup, $data, $options) {
     ], 8, _hoisted_3$9)
   ], 8, _hoisted_1$k);
 }
-var IconBase = /* @__PURE__ */ _export_sfc(_sfc_main$n, [["render", _sfc_render$n], ["__scopeId", "data-v-50157217"]]);
+var IconBase = /* @__PURE__ */ _export_sfc(_sfc_main$n, [["render", _sfc_render$n], ["__scopeId", "data-v-659ca2d2"]]);
 const _sfc_main$m = {};
 const _hoisted_1$j = { d: "M19.404,6.65l-5.998-5.996c-0.292-0.292-0.765-0.292-1.056,0l-2.22,2.22l-8.311,8.313l-0.003,0.001v0.003l-0.161,0.161c-0.114,0.112-0.187,0.258-0.21,0.417l-1.059,7.051c-0.035,0.233,0.044,0.47,0.21,0.639c0.143,0.14,0.333,0.219,0.528,0.219c0.038,0,0.073-0.003,0.111-0.009l7.054-1.055c0.158-0.025,0.306-0.098,0.417-0.211l8.478-8.476l2.22-2.22C19.695,7.414,19.695,6.941,19.404,6.65z M8.341,16.656l-0.989-0.99l7.258-7.258l0.989,0.99L8.341,16.656z M2.332,15.919l0.411-2.748l4.143,4.143l-2.748,0.41L2.332,15.919z M13.554,7.351L6.296,14.61l-0.849-0.848l7.259-7.258l0.423,0.424L13.554,7.351zM10.658,4.457l0.992,0.99l-7.259,7.258L3.4,11.715L10.658,4.457z M16.656,8.342l-1.517-1.517V6.823h-0.003l-0.951-0.951l-2.471-2.471l1.164-1.164l4.942,4.94L16.656,8.342z" };
 function _sfc_render$m(_ctx, _cache) {
@@ -1503,7 +1503,7 @@ var Autolinker$1 = { exports: {} };
   });
 })(Autolinker$1);
 var Autolinker = Autolinker$1.exports;
-var TextMessage_vue_vue_type_style_index_0_scoped_true_lang = /* @__PURE__ */ (() => ".sc-message--text[data-v-d40c494a]{padding:5px 20px;border-radius:6px;font-weight:300;font-size:14px;line-height:1.4;position:relative;-webkit-font-smoothing:subpixel-antialiased}.sc-message--text .sc-message--text-content[data-v-d40c494a]{white-space:pre-wrap}.sc-message--text:hover .sc-message--toolbox[data-v-d40c494a]{left:-20px;opacity:1}.sc-message--text .sc-message--toolbox[data-v-d40c494a]{transition:left .2s ease-out 0s;white-space:normal;opacity:0;position:absolute;left:0px;width:25px;top:0}.sc-message--text .sc-message--toolbox button[data-v-d40c494a]{background:none;border:none;padding:0;margin:0;outline:none;width:100%;text-align:center;cursor:pointer}.sc-message--text .sc-message--toolbox button[data-v-d40c494a]:focus{outline:none}.sc-message--text .sc-message--toolbox[data-v-d40c494a] svg{margin-left:5px}.sc-message--text code[data-v-d40c494a]{font-family:Courier New,Courier,monospace!important}.sc-message--content.sent .sc-message--text[data-v-d40c494a]{color:#fff;background-color:#4e8cff;max-width:calc(100% - 120px);word-wrap:break-word;border-radius:24px 24px 0}.sc-message--content.received .sc-message--text[data-v-d40c494a]{color:#263238;background-color:#f4f7f9;margin-right:40px;border-radius:0 24px 24px}a.chatLink[data-v-d40c494a]{color:inherit!important}\n")();
+var TextMessage_vue_vue_type_style_index_0_scoped_true_lang = /* @__PURE__ */ (() => ".sc-message--text[data-v-9f9f4cc4]{padding:5px 20px;border-radius:6px;font-weight:300;font-size:14px;line-height:1.4;position:relative;-webkit-font-smoothing:subpixel-antialiased}.sc-message--text .sc-message--text-content[data-v-9f9f4cc4]{white-space:pre-wrap}.sc-message--text:hover .sc-message--toolbox[data-v-9f9f4cc4]{left:-20px;opacity:1}.sc-message--text .sc-message--toolbox[data-v-9f9f4cc4]{transition:left .2s ease-out 0s;white-space:normal;opacity:0;position:absolute;left:0px;width:25px;top:0}.sc-message--text .sc-message--toolbox button[data-v-9f9f4cc4]{background:none;border:none;padding:0;margin:0;outline:none;width:100%;text-align:center;cursor:pointer}.sc-message--text .sc-message--toolbox button[data-v-9f9f4cc4]:focus{outline:none}.sc-message--text .sc-message--toolbox[data-v-9f9f4cc4] svg{margin-left:5px}.sc-message--text code[data-v-9f9f4cc4]{font-family:Courier New,Courier,monospace!important}.sc-message--content.sent .sc-message--text[data-v-9f9f4cc4]{color:#fff;background-color:#4e8cff;max-width:calc(100% - 120px);word-wrap:break-word;border-radius:24px 24px 0}.sc-message--content.received .sc-message--text[data-v-9f9f4cc4]{color:#263238;background-color:#f4f7f9;margin-right:40px;border-radius:0 24px 24px}a.chatLink[data-v-9f9f4cc4]{color:inherit!important}\n")();
 const fmt$1 = require("msgdown");
 const _sfc_main$k = {
   components: {
@@ -1634,8 +1634,8 @@ function _sfc_render$k(_ctx, _cache, $props, $setup, $data, $options) {
     ], true)
   ], 4);
 }
-var TextMessage = /* @__PURE__ */ _export_sfc(_sfc_main$k, [["render", _sfc_render$k], ["__scopeId", "data-v-d40c494a"]]);
-var FileMessage_vue_vue_type_style_index_0_scoped_true_lang = /* @__PURE__ */ (() => ".sc-message--file[data-v-531d5d5c]{border-radius:6px;font-weight:300;font-size:14px;line-height:1.4;-webkit-font-smoothing:subpixel-antialiased}.sc-message--content.sent .sc-message--file[data-v-531d5d5c]{word-wrap:break-word}.sc-message--file-icon[data-v-531d5d5c]{text-align:center;margin:15px auto 0}.sc-image[data-v-531d5d5c]{max-width:100%;min-width:100%}.sc-message--file-text[data-v-531d5d5c]{padding:17px 20px;border-radius:6px;font-weight:300;font-size:14px;line-height:1.4;white-space:pre-wrap;-webkit-font-smoothing:subpixel-antialiased}.sc-message--file-name[data-v-531d5d5c]{color:#fff;padding-left:15px;padding-right:15px;padding-top:0;font-size:x-small;text-align:center}.sc-message--file-name a[data-v-531d5d5c]{text-decoration:none;color:#ece7e7}.sc-message--file-name a[data-v-531d5d5c]:hover{color:#fff}.sc-message--content.sent .sc-message--file-text[data-v-531d5d5c]{color:#fff;background-color:#4e8cff;word-wrap:break-word}.sc-message--content.received .sc-message--file[data-v-531d5d5c]{color:#263238;background-color:#f4f7f9;margin-right:40px}.sc-message--content.received .sc-message--file-name[data-v-531d5d5c]{color:#000}.sc-message--content.received .sc-message--file a[data-v-531d5d5c]{color:#2b2828b3}.sc-message--content.received .sc-message--file a[data-v-531d5d5c]:hover{color:#0c0c0c}\n")();
+var TextMessage = /* @__PURE__ */ _export_sfc(_sfc_main$k, [["render", _sfc_render$k], ["__scopeId", "data-v-9f9f4cc4"]]);
+var FileMessage_vue_vue_type_style_index_0_scoped_true_lang = /* @__PURE__ */ (() => ".sc-message--file[data-v-5d8a7a52]{border-radius:6px;font-weight:300;font-size:14px;line-height:1.4;-webkit-font-smoothing:subpixel-antialiased}.sc-message--content.sent .sc-message--file[data-v-5d8a7a52]{word-wrap:break-word}.sc-message--file-icon[data-v-5d8a7a52]{text-align:center;margin:15px auto 0}.sc-image[data-v-5d8a7a52]{max-width:100%;min-width:100%}.sc-message--file-text[data-v-5d8a7a52]{padding:17px 20px;border-radius:6px;font-weight:300;font-size:14px;line-height:1.4;white-space:pre-wrap;-webkit-font-smoothing:subpixel-antialiased}.sc-message--file-name[data-v-5d8a7a52]{color:#fff;padding-left:15px;padding-right:15px;padding-top:0;font-size:x-small;text-align:center}.sc-message--file-name a[data-v-5d8a7a52]{text-decoration:none;color:#ece7e7}.sc-message--file-name a[data-v-5d8a7a52]:hover{color:#fff}.sc-message--content.sent .sc-message--file-text[data-v-5d8a7a52]{color:#fff;background-color:#4e8cff;word-wrap:break-word}.sc-message--content.received .sc-message--file[data-v-5d8a7a52]{color:#263238;background-color:#f4f7f9;margin-right:40px}.sc-message--content.received .sc-message--file-name[data-v-5d8a7a52]{color:#000}.sc-message--content.received .sc-message--file a[data-v-5d8a7a52]{color:#2b2828b3}.sc-message--content.received .sc-message--file a[data-v-5d8a7a52]:hover{color:#0c0c0c}\n")();
 const _sfc_main$j = {
   props: {
     data: {
@@ -1684,8 +1684,8 @@ function _sfc_render$j(_ctx, _cache, $props, $setup, $data, $options) {
     ], 4)
   ], 4);
 }
-var FileMessage = /* @__PURE__ */ _export_sfc(_sfc_main$j, [["render", _sfc_render$j], ["__scopeId", "data-v-531d5d5c"]]);
-var EmojiMessage_vue_vue_type_style_index_0_scoped_true_lang = /* @__PURE__ */ (() => ".sc-message--emoji[data-v-651be057]{font-size:40px}\n")();
+var FileMessage = /* @__PURE__ */ _export_sfc(_sfc_main$j, [["render", _sfc_render$j], ["__scopeId", "data-v-5d8a7a52"]]);
+var EmojiMessage_vue_vue_type_style_index_0_scoped_true_lang = /* @__PURE__ */ (() => ".sc-message--emoji[data-v-02ef8752]{font-size:40px}\n")();
 const _sfc_main$i = {
   props: {
     data: {
@@ -1698,8 +1698,8 @@ const _hoisted_1$f = { class: "sc-message--emoji" };
 function _sfc_render$i(_ctx, _cache, $props, $setup, $data, $options) {
   return openBlock(), createElementBlock("div", _hoisted_1$f, toDisplayString($props.data.emoji), 1);
 }
-var EmojiMessage = /* @__PURE__ */ _export_sfc(_sfc_main$i, [["render", _sfc_render$i], ["__scopeId", "data-v-651be057"]]);
-var TypingMessage_vue_vue_type_style_index_0_scoped_true_lang = /* @__PURE__ */ (() => ".sc-typing-indicator[data-v-244d06fe]{text-align:center;padding:17px 20px;border-radius:6px}.sc-typing-indicator span[data-v-244d06fe]{display:inline-block;background-color:#b6b5ba;width:10px;height:10px;border-radius:100%;margin-right:3px;animation:bob-244d06fe 2s infinite}.sc-typing-indicator span[data-v-244d06fe]:nth-child(1){animation-delay:-1s}.sc-typing-indicator span[data-v-244d06fe]:nth-child(2){animation-delay:-.85s}.sc-typing-indicator span[data-v-244d06fe]:nth-child(3){animation-delay:-.7s}@keyframes bob-244d06fe{10%{transform:translateY(-10px);background-color:#9e9da2}50%{transform:translateY(0);background-color:#b6b5ba}}\n")();
+var EmojiMessage = /* @__PURE__ */ _export_sfc(_sfc_main$i, [["render", _sfc_render$i], ["__scopeId", "data-v-02ef8752"]]);
+var TypingMessage_vue_vue_type_style_index_0_scoped_true_lang = /* @__PURE__ */ (() => ".sc-typing-indicator[data-v-cd87b484]{text-align:center;padding:17px 20px;border-radius:6px}.sc-typing-indicator span[data-v-cd87b484]{display:inline-block;background-color:#b6b5ba;width:10px;height:10px;border-radius:100%;margin-right:3px;animation:bob-cd87b484 2s infinite}.sc-typing-indicator span[data-v-cd87b484]:nth-child(1){animation-delay:-1s}.sc-typing-indicator span[data-v-cd87b484]:nth-child(2){animation-delay:-.85s}.sc-typing-indicator span[data-v-cd87b484]:nth-child(3){animation-delay:-.7s}@keyframes bob-cd87b484{10%{transform:translateY(-10px);background-color:#9e9da2}50%{transform:translateY(0);background-color:#b6b5ba}}\n")();
 const _sfc_main$h = {
   props: {
     messageColors: {
@@ -1708,7 +1708,7 @@ const _sfc_main$h = {
     }
   }
 };
-const _withScopeId$1 = (n) => (pushScopeId("data-v-244d06fe"), n = n(), popScopeId(), n);
+const _withScopeId$1 = (n) => (pushScopeId("data-v-cd87b484"), n = n(), popScopeId(), n);
 const _hoisted_1$e = /* @__PURE__ */ _withScopeId$1(() => /* @__PURE__ */ createElementVNode("span", null, null, -1));
 const _hoisted_2$a = /* @__PURE__ */ _withScopeId$1(() => /* @__PURE__ */ createElementVNode("span", null, null, -1));
 const _hoisted_3$6 = /* @__PURE__ */ _withScopeId$1(() => /* @__PURE__ */ createElementVNode("span", null, null, -1));
@@ -1723,8 +1723,8 @@ function _sfc_render$h(_ctx, _cache, $props, $setup, $data, $options) {
     style: normalizeStyle($props.messageColors)
   }, _hoisted_4$1, 4);
 }
-var TypingMessage = /* @__PURE__ */ _export_sfc(_sfc_main$h, [["render", _sfc_render$h], ["__scopeId", "data-v-244d06fe"]]);
-var SystemMessage_vue_vue_type_style_index_0_scoped_true_lang = /* @__PURE__ */ (() => ".sc-message--system[data-v-693594c5]{padding:8px 20px;border-radius:6px;font-weight:300;font-size:12px;line-height:1.2;white-space:pre-wrap;-webkit-font-smoothing:subpixel-antialiased;font-style:italic;opacity:.55}.sc-message--meta[data-v-693594c5]{font-size:xx-small;margin-bottom:0;margin-top:5px;opacity:.5;text-align:center}\n")();
+var TypingMessage = /* @__PURE__ */ _export_sfc(_sfc_main$h, [["render", _sfc_render$h], ["__scopeId", "data-v-cd87b484"]]);
+var SystemMessage_vue_vue_type_style_index_0_scoped_true_lang = /* @__PURE__ */ (() => ".sc-message--system[data-v-42f2c997]{padding:8px 20px;border-radius:6px;font-weight:300;font-size:12px;line-height:1.2;white-space:pre-wrap;-webkit-font-smoothing:subpixel-antialiased;font-style:italic;opacity:.55}.sc-message--meta[data-v-42f2c997]{font-size:xx-small;margin-bottom:0;margin-top:5px;opacity:.5;text-align:center}\n")();
 const _sfc_main$g = {
   props: {
     data: {
@@ -1752,16 +1752,10 @@ function _sfc_render$g(_ctx, _cache, $props, $setup, $data, $options) {
     ], true)
   ], 4);
 }
-var SystemMessage = /* @__PURE__ */ _export_sfc(_sfc_main$g, [["render", _sfc_render$g], ["__scopeId", "data-v-693594c5"]]);
-var OptionMessage_vue_vue_type_style_index_0_scoped_true_lang = /* @__PURE__ */ (() => ".sc-message--text[data-v-35d50c6a]{padding:5px 20px;border-radius:6px;font-weight:300;font-size:14px;line-height:1.4;position:relative;-webkit-font-smoothing:subpixel-antialiased}.sc-message--text .sc-message--text-content[data-v-35d50c6a]{white-space:pre-wrap}.sc-message--text:hover .sc-message--toolbox[data-v-35d50c6a]{left:-20px;opacity:1}.sc-message--text .sc-message--toolbox[data-v-35d50c6a]{transition:left .2s ease-out 0s;white-space:normal;opacity:0;position:absolute;left:0px;width:25px;top:0}.sc-message--text .sc-message--toolbox button[data-v-35d50c6a]{background:none;border:none;padding:0;margin:0;outline:none;width:100%;text-align:center;cursor:pointer}.sc-message--text .sc-message--toolbox button[data-v-35d50c6a]:focus{outline:none}.sc-message--text .sc-message--toolbox[data-v-35d50c6a] svg{margin-left:5px}.sc-message--text code[data-v-35d50c6a]{font-family:Courier New,Courier,monospace!important}.sc-message--content.sent .sc-message--text[data-v-35d50c6a]{color:#fff;background-color:#4e8cff;max-width:calc(100% - 120px);word-wrap:break-word;border-radius:24px 24px 0}.sc-message--content.received .sc-message--text[data-v-35d50c6a]{color:#263238;background-color:#f4f7f9;margin-right:40px;border-radius:0 24px 24px}a.chatLink[data-v-35d50c6a]{color:inherit!important}input[data-v-35d50c6a]{box-sizing:border-box;border:1px solid #589BF6;filter:drop-shadow(0px 0px 5px rgba(42,107,246,.6));margin:.5em}input[data-v-35d50c6a]:checked{background:#589BF6}\n")();
+var SystemMessage = /* @__PURE__ */ _export_sfc(_sfc_main$g, [["render", _sfc_render$g], ["__scopeId", "data-v-42f2c997"]]);
+var OptionMessage_vue_vue_type_style_index_0_scoped_true_lang = /* @__PURE__ */ (() => ".sc-message--text[data-v-51a1fc54]{padding:5px 20px;border-radius:6px;font-weight:300;font-size:14px;line-height:1.4;position:relative;-webkit-font-smoothing:subpixel-antialiased}.sc-message--text .sc-message--text-content[data-v-51a1fc54]{white-space:pre-wrap}.sc-message--text:hover .sc-message--toolbox[data-v-51a1fc54]{left:-20px;opacity:1}.sc-message--text .sc-message--toolbox[data-v-51a1fc54]{transition:left .2s ease-out 0s;white-space:normal;opacity:0;position:absolute;left:0px;width:25px;top:0}.sc-message--text .sc-message--toolbox button[data-v-51a1fc54]{background:none;border:none;padding:0;margin:0;outline:none;width:100%;text-align:center;cursor:pointer}.sc-message--text .sc-message--toolbox button[data-v-51a1fc54]:focus{outline:none}.sc-message--text .sc-message--toolbox[data-v-51a1fc54] svg{margin-left:5px}.sc-message--text code[data-v-51a1fc54]{font-family:Courier New,Courier,monospace!important}.sc-message--content.sent .sc-message--text[data-v-51a1fc54]{color:#fff;background-color:#4e8cff;max-width:calc(100% - 120px);word-wrap:break-word;border-radius:24px 24px 0}.sc-message--content.received .sc-message--text[data-v-51a1fc54]{color:#263238;background-color:#f4f7f9;margin-right:40px;border-radius:0 24px 24px}a.chatLink[data-v-51a1fc54]{color:inherit!important}input[data-v-51a1fc54]{box-sizing:border-box;border:1px solid #589bf6;filter:drop-shadow(0px 0px 5px rgba(42,107,246,.6));margin:.5em}input[data-v-51a1fc54]:checked{background:#589bf6}\n")();
 const fmt = require("msgdown");
 const _sfc_main$f = {
-  data() {
-    return {
-      optionPicked: null,
-      isConsolidated: false
-    };
-  },
   components: {
     IconBase,
     IconCross,
@@ -1780,6 +1774,12 @@ const _sfc_main$f = {
       type: Boolean,
       required: true
     }
+  },
+  data() {
+    return {
+      optionPicked: null,
+      isConsolidated: false
+    };
   },
   watch: {
     optionPicked: function(newVal, oldVal) {
@@ -1832,13 +1832,13 @@ function _sfc_render$f(_ctx, _cache, $props, $setup, $data, $options) {
         (openBlock(true), createElementBlock(Fragment, null, renderList($props.message.data.options, (option, i) => {
           return openBlock(), createElementBlock("div", { key: i }, [
             withDirectives(createElementVNode("input", {
-              type: "radio",
               id: option.value,
+              "onUpdate:modelValue": _cache[0] || (_cache[0] = ($event) => $data.optionPicked = $event),
+              type: "radio",
               name: "options",
               value: option.value,
-              "onUpdate:modelValue": _cache[0] || (_cache[0] = ($event) => $data.optionPicked = $event),
-              onClick: _cache[1] || (_cache[1] = ($event) => $data.isConsolidated = true),
-              disabled: $data.isConsolidated
+              disabled: $data.isConsolidated,
+              onClick: _cache[1] || (_cache[1] = ($event) => $data.isConsolidated = true)
             }, null, 8, _hoisted_2$9), [
               [vModelRadio, $data.optionPicked]
             ]),
@@ -1856,10 +1856,10 @@ function _sfc_render$f(_ctx, _cache, $props, $setup, $data, $options) {
     ], true)
   ], 4);
 }
-var OptionMessage = /* @__PURE__ */ _export_sfc(_sfc_main$f, [["render", _sfc_render$f], ["__scopeId", "data-v-35d50c6a"]]);
-var Loader_vue_vue_type_style_index_0_scoped_true_lang = /* @__PURE__ */ (() => ".loader[data-v-5366a4aa]{border:6px solid #bed9ff;border-radius:50%;border-top:6px solid #2a6bf6;width:48px;height:48px;-webkit-animation:spin-5366a4aa 2s linear infinite;animation:spin-5366a4aa 1s linear infinite}@-webkit-keyframes spin-5366a4aa{0%{-webkit-transform:rotate(0deg)}to{-webkit-transform:rotate(360deg)}}@keyframes spin-5366a4aa{0%{transform:rotate(0)}to{transform:rotate(360deg)}}\n")();
+var OptionMessage = /* @__PURE__ */ _export_sfc(_sfc_main$f, [["render", _sfc_render$f], ["__scopeId", "data-v-51a1fc54"]]);
+var Loader_vue_vue_type_style_index_0_scoped_true_lang = /* @__PURE__ */ (() => ".loader[data-v-67a2236b]{border:6px solid #bed9ff;border-radius:50%;border-top:6px solid #2a6bf6;width:48px;height:48px;-webkit-animation:spin-67a2236b 2s linear infinite;animation:spin-67a2236b 1s linear infinite}@-webkit-keyframes spin-67a2236b{0%{-webkit-transform:rotate(0deg)}to{-webkit-transform:rotate(360deg)}}@keyframes spin-67a2236b{0%{transform:rotate(0)}to{transform:rotate(360deg)}}\n")();
 const _sfc_main$e = {};
-const _withScopeId = (n) => (pushScopeId("data-v-5366a4aa"), n = n(), popScopeId(), n);
+const _withScopeId = (n) => (pushScopeId("data-v-67a2236b"), n = n(), popScopeId(), n);
 const _hoisted_1$c = /* @__PURE__ */ _withScopeId(() => /* @__PURE__ */ createElementVNode("div", { class: "loader" }, null, -1));
 const _hoisted_2$8 = [
   _hoisted_1$c
@@ -1867,9 +1867,10 @@ const _hoisted_2$8 = [
 function _sfc_render$e(_ctx, _cache) {
   return openBlock(), createElementBlock("div", null, _hoisted_2$8);
 }
-var Loader = /* @__PURE__ */ _export_sfc(_sfc_main$e, [["render", _sfc_render$e], ["__scopeId", "data-v-5366a4aa"]]);
-var ProcessMessage_vue_vue_type_style_index_0_scoped_true_lang = /* @__PURE__ */ (() => ".sc-message--process[data-v-5121ab56]{display:flex;align-items:center;padding:8px 20px;border-radius:6px;white-space:pre-wrap;-webkit-font-smoothing:subpixel-antialiased;max-width:300px;font-weight:700;font-size:12px;line-height:16px;color:#2a6bf6}p[data-v-5121ab56]{margin-left:10px}\n")();
+var Loader = /* @__PURE__ */ _export_sfc(_sfc_main$e, [["render", _sfc_render$e], ["__scopeId", "data-v-67a2236b"]]);
+var ProcessMessage_vue_vue_type_style_index_0_scoped_true_lang = /* @__PURE__ */ (() => ".sc-message--process[data-v-47676298]{display:flex;align-items:center;padding:8px 20px;border-radius:6px;white-space:pre-wrap;-webkit-font-smoothing:subpixel-antialiased;max-width:300px;font-weight:700;font-size:12px;line-height:16px;color:#2a6bf6}p[data-v-47676298]{margin-left:10px}\n")();
 const _sfc_main$d = {
+  components: { Loader },
   props: {
     loading: {
       type: Boolean,
@@ -1879,8 +1880,7 @@ const _sfc_main$d = {
       type: Object,
       required: true
     }
-  },
-  components: { Loader }
+  }
 };
 const _hoisted_1$b = { class: "sc-message--process" };
 const _hoisted_2$7 = {
@@ -1895,8 +1895,8 @@ function _sfc_render$d(_ctx, _cache, $props, $setup, $data, $options) {
     createElementVNode("p", null, toDisplayString($props.message.data.text), 1)
   ]);
 }
-var ProcessMessage = /* @__PURE__ */ _export_sfc(_sfc_main$d, [["render", _sfc_render$d], ["__scopeId", "data-v-5121ab56"]]);
-var WelcomeMessage_vue_vue_type_style_index_0_scoped_true_lang = /* @__PURE__ */ (() => ".sc-message--welcome[data-v-c4ffd490]{display:flex;position:relative;align-items:center;flex-direction:column;padding:30px 20px 8px;border:1px solid #589BF6;border-radius:24px;white-space:pre-wrap;-webkit-font-smoothing:subpixel-antialiased;font-style:normal;font-weight:400;font-size:13px;line-height:20px;margin-top:30px}.sc-message--img[data-v-c4ffd490]{align-self:center;top:-29px;max-width:55px;border:2px solid #589BF6;border-radius:200px;background-color:#fff;position:absolute}.sc-message--meta[data-v-c4ffd490]{font-size:x-small;margin-bottom:0;margin-top:5px;opacity:.5;text-align:center}\n")();
+var ProcessMessage = /* @__PURE__ */ _export_sfc(_sfc_main$d, [["render", _sfc_render$d], ["__scopeId", "data-v-47676298"]]);
+var WelcomeMessage_vue_vue_type_style_index_0_scoped_true_lang = /* @__PURE__ */ (() => ".sc-message--welcome[data-v-26c30ba0]{display:flex;position:relative;align-items:center;flex-direction:column;padding:30px 20px 8px;border:1px solid #589bf6;border-radius:24px;white-space:pre-wrap;-webkit-font-smoothing:subpixel-antialiased;font-style:normal;font-weight:400;font-size:13px;line-height:20px;margin-top:30px}.sc-message--img[data-v-26c30ba0]{align-self:center;top:-29px;max-width:55px;border:2px solid #589bf6;border-radius:200px;background-color:#fff;position:absolute}.sc-message--meta[data-v-26c30ba0]{font-size:x-small;margin-bottom:0;margin-top:5px;opacity:.5;text-align:center}\n")();
 const _sfc_main$c = {
   props: {
     data: {
@@ -1922,7 +1922,7 @@ function _sfc_render$c(_ctx, _cache, $props, $setup, $data, $options) {
     }, toDisplayString($props.data.meta), 9, _hoisted_3$4)) : createCommentVNode("", true)
   ]);
 }
-var WelcomeMessage = /* @__PURE__ */ _export_sfc(_sfc_main$c, [["render", _sfc_render$c], ["__scopeId", "data-v-c4ffd490"]]);
+var WelcomeMessage = /* @__PURE__ */ _export_sfc(_sfc_main$c, [["render", _sfc_render$c], ["__scopeId", "data-v-26c30ba0"]]);
 var chatIcon = "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2aWV3Qm94PSItNDc0OS40OCAtNTAyMCAzNS4wMzYgMzUuMDM2Ij48ZGVmcz48c3R5bGU+LmF7ZmlsbDpub25lO30uYntmaWxsOiM0ZThjZmY7fS5je2NsaXAtcGF0aDp1cmwoI2EpO30uZHtmaWxsOiNmZmY7fS5le2ZpbGw6I2VmZjRmOTt9PC9zdHlsZT48Y2xpcFBhdGggaWQ9ImEiPjxwYXRoIGNsYXNzPSJhIiBkPSJNMC0zOTkuNDc5SDE3LjU1NXYxNy41NTVIMFoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAgMzk5LjQ3OSkiLz48L2NsaXBQYXRoPjwvZGVmcz48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNDg4NiAtNTA3NSkiPjxjaXJjbGUgY2xhc3M9ImIiIGN4PSIxNy41MTgiIGN5PSIxNy41MTgiIHI9IjE3LjUxOCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTM2LjUyIDU1KSIvPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDE0NS4xMyA2NCkiPjxnIGNsYXNzPSJjIj48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwIDApIj48cGF0aCBjbGFzcz0iZCIgZD0iTS0zODEuOTI0LTE5MC45NjJhOC43NzgsOC43NzgsMCwwLDAtOC43NzgtOC43NzgsOC43NzgsOC43NzgsMCwwLDAtOC43NzgsOC43NzgsOC43NDUsOC43NDUsMCwwLDAsMi4yNiw1Ljg3OXYxLjQ0MmMwLC44LjQ5MiwxLjQ1NywxLjEsMS40NTdoNS44M2EuODQzLjg0MywwLDAsMCwuMTgzLS4wMiw4Ljc3OCw4Ljc3OCwwLDAsMCw4LjE4NC04Ljc1NyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMzk5LjQ3OSAxOTkuNzQpIi8+PC9nPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAgMCkiPjxwYXRoIGNsYXNzPSJlIiBkPSJNLTY4Ljc2My0xOTQuMDc5YTkuMjkyLDkuMjkyLDAsMCwxLDYuMzgtOC44ODhjLS4yNTItLjAyMi0uNTA2LS4wMzMtLjc2My0uMDMzYTguNzc0LDguNzc0LDAsMCwwLTguNzc4LDguNzc4QTkuNTA4LDkuNTA4LDAsMCwwLTY5LjctMTg4LjNjLjAwNSwwLDAsLjAwOSwwLC4wMS0uMzExLjM1Mi0xLjkyNCwyLjg0OS4wMjEsMi44NDloMi4yNWMtMS4yMy0uMDIyLDEuMjYzLTIuMTA3LjI2OS0zLjQ5NGE4LjIyNSw4LjIyNSwwLDAsMS0xLjYtNS4xNDEiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDcxLjkyNCAyMDMpIi8+PC9nPjwvZz48L2c+PC9nPjwvc3ZnPg==";
 var Message_vue_vue_type_style_index_0_lang = /* @__PURE__ */ (() => ".sc-message{margin-bottom:10px;display:flex}.sc-message .sc-message--edited{opacity:.7;word-wrap:normal;font-size:xx-small;text-align:center}.sc-message--content{width:100%;display:flex}.sc-message--content.sent{justify-content:flex-end}.sc-message--content.system,.sc-message--content.process,.sc-message--content.welcome{justify-content:center}.sc-message--content.sent .sc-message--avatar{display:none}.sc-message--avatar{background-repeat:no-repeat;background-size:100%;background-position:center;min-width:30px;min-height:30px;border-radius:50%;align-self:center;margin-right:15px}.sc-message--meta{font-size:xx-small;margin-bottom:0;color:#77838f;text-align:center}.tooltip{display:block!important;z-index:10000}.tooltip .tooltip-inner{background:black;color:#fff;border-radius:16px;padding:5px 10px 4px}.tooltip .tooltip-arrow{width:0;height:0;border-style:solid;position:absolute;margin:5px;border-color:#000;z-index:1}.tooltip[x-placement^=top]{margin-bottom:5px}.tooltip[x-placement^=top] .tooltip-arrow{border-width:5px 5px 0 5px;border-left-color:transparent!important;border-right-color:transparent!important;border-bottom-color:transparent!important;bottom:-5px;left:calc(50% - 5px);margin-top:0;margin-bottom:0}.tooltip[x-placement^=bottom]{margin-top:5px}.tooltip[x-placement^=bottom] .tooltip-arrow{border-width:0 5px 5px 5px;border-left-color:transparent!important;border-right-color:transparent!important;border-top-color:transparent!important;top:-5px;left:calc(50% - 5px);margin-top:0;margin-bottom:0}.tooltip[x-placement^=right]{margin-left:5px}.tooltip[x-placement^=right] .tooltip-arrow{border-width:5px 5px 5px 0;border-left-color:transparent!important;border-top-color:transparent!important;border-bottom-color:transparent!important;left:-5px;top:calc(50% - 5px);margin-left:0;margin-right:0}.tooltip[x-placement^=left]{margin-right:5px}.tooltip[x-placement^=left] .tooltip-arrow{border-width:5px 0 5px 5px;border-top-color:transparent!important;border-right-color:transparent!important;border-bottom-color:transparent!important;right:-5px;top:calc(50% - 5px);margin-left:0;margin-right:0}.tooltip[aria-hidden=true]{visibility:hidden;opacity:0;transition:opacity .15s,visibility .15s}.tooltip[aria-hidden=false]{visibility:visible;opacity:1;transition:opacity .15s}.tooltip.info .tooltip-inner{background:rgba(0,68,153,.9);color:#fff;padding:24px;border-radius:5px;box-shadow:0 5px 30px #0000001a}.tooltip.info .tooltip-arrow{border-color:#004499e6}.tooltip.popover .popover-inner{background:#f9f9f9;color:#000;padding:24px;border-radius:5px;box-shadow:0 5px 30px #0000001a}.tooltip.popover .popover-arrow{border-color:#f9f9f9}\n")();
 const _sfc_main$b = {
@@ -2109,7 +2109,7 @@ function _sfc_render$b(_ctx, _cache, $props, $setup, $data, $options) {
   ], 8, _hoisted_1$9);
 }
 var Message = /* @__PURE__ */ _export_sfc(_sfc_main$b, [["render", _sfc_render$b]]);
-var MessageList_vue_vue_type_style_index_0_scoped_true_lang = /* @__PURE__ */ (() => ".sc-message-list[data-v-3095e4b6]{height:80%;overflow-y:auto;background-size:100%;padding:40px 20px}\n")();
+var MessageList_vue_vue_type_style_index_0_scoped_true_lang = /* @__PURE__ */ (() => ".sc-message-list[data-v-6bf9ae09]{height:80%;overflow-y:auto;background-size:100%;padding:40px 20px}\n")();
 const _sfc_main$a = {
   components: {
     Message,
@@ -2229,7 +2229,7 @@ function _sfc_render$a(_ctx, _cache, $props, $setup, $data, $options) {
     ])
   ], 36);
 }
-var MessageList = /* @__PURE__ */ _export_sfc(_sfc_main$a, [["render", _sfc_render$a], ["__scopeId", "data-v-3095e4b6"]]);
+var MessageList = /* @__PURE__ */ _export_sfc(_sfc_main$a, [["render", _sfc_render$a], ["__scopeId", "data-v-6bf9ae09"]]);
 var emoji = { exports: {} };
 (function(module, exports) {
   (function() {
@@ -5578,7 +5578,7 @@ var emojiData = [
     ]
   }
 ];
-var EmojiPicker_vue_vue_type_style_index_0_scoped_true_lang = /* @__PURE__ */ (() => '.sc-emoji-picker[data-v-5cf76221]{position:absolute;bottom:50px;right:12px;width:330px;max-height:215px;box-shadow:0 7px 40px 2px #9495964d;background:white;border-radius:10px;outline:none}.sc-emoji-picker[data-v-5cf76221]:after{content:"";width:14px;height:14px;background:white;position:absolute;bottom:-6px;right:55px;transform:rotate(45deg);border-radius:2px}.sc-emoji-picker--content[data-v-5cf76221]{padding:10px;overflow:auto;width:100%;max-height:195px;margin-top:7px;box-sizing:border-box}.sc-emoji-picker--category[data-v-5cf76221]{display:flex;flex-direction:row;flex-wrap:wrap}.sc-emoji-picker--category-title[data-v-5cf76221]{min-width:100%;color:#b8c3ca;font-size:13px;margin:5px;letter-spacing:1px}.sc-emoji-picker--emoji[data-v-5cf76221]{margin:5px;width:30px;line-height:30px;text-align:center;cursor:pointer;vertical-align:middle;font-size:28px;transition:transform 60ms ease-out}.sc-emoji-picker--emoji[data-v-5cf76221]:hover{transform:scale(1.4)}\n')();
+var EmojiPicker_vue_vue_type_style_index_0_scoped_true_lang = /* @__PURE__ */ (() => '.sc-emoji-picker[data-v-552ed5bf]{position:absolute;bottom:50px;right:12px;width:330px;max-height:215px;box-shadow:0 7px 40px 2px #9495964d;background:white;border-radius:10px;outline:none}.sc-emoji-picker[data-v-552ed5bf]:after{content:"";width:14px;height:14px;background:white;position:absolute;bottom:-6px;right:55px;transform:rotate(45deg);border-radius:2px}.sc-emoji-picker--content[data-v-552ed5bf]{padding:10px;overflow:auto;width:100%;max-height:195px;margin-top:7px;box-sizing:border-box}.sc-emoji-picker--category[data-v-552ed5bf]{display:flex;flex-direction:row;flex-wrap:wrap}.sc-emoji-picker--category-title[data-v-552ed5bf]{min-width:100%;color:#b8c3ca;font-size:13px;margin:5px;letter-spacing:1px}.sc-emoji-picker--emoji[data-v-552ed5bf]{margin:5px;width:30px;line-height:30px;text-align:center;cursor:pointer;vertical-align:middle;font-size:28px;transition:transform 60ms ease-out}.sc-emoji-picker--emoji[data-v-552ed5bf]:hover{transform:scale(1.4)}\n')();
 const _sfc_main$9 = {
   props: {
     onBlur: {
@@ -5642,8 +5642,8 @@ function _sfc_render$9(_ctx, _cache, $props, $setup, $data, $options) {
     ])
   ], 544);
 }
-var EmojiPicker = /* @__PURE__ */ _export_sfc(_sfc_main$9, [["render", _sfc_render$9], ["__scopeId", "data-v-5cf76221"]]);
-var EmojiIcon_vue_vue_type_style_index_0_scoped_true_lang = /* @__PURE__ */ (() => ".sc-user-input--emoji-icon-wrapper[data-v-2807eca1]{display:block;background:none;border:none;padding:0;margin:0;outline:none}.sc-user-input--emoji-icon-wrapper[data-v-2807eca1]:focus{outline:none}.sc-user-input--emoji-icon[data-v-2807eca1]{display:block;cursor:pointer}\n")();
+var EmojiPicker = /* @__PURE__ */ _export_sfc(_sfc_main$9, [["render", _sfc_render$9], ["__scopeId", "data-v-552ed5bf"]]);
+var EmojiIcon_vue_vue_type_style_index_0_scoped_true_lang = /* @__PURE__ */ (() => ".sc-user-input--emoji-icon-wrapper[data-v-60102486]{display:block;background:none;border:none;padding:0;margin:0;outline:none}.sc-user-input--emoji-icon-wrapper[data-v-60102486]:focus{outline:none}.sc-user-input--emoji-icon[data-v-60102486]{display:block;cursor:pointer}\n")();
 const _sfc_main$8 = {
   components: {
     EmojiPicker
@@ -5716,8 +5716,8 @@ function _sfc_render$8(_ctx, _cache, $props, $setup, $data, $options) {
     ])
   ]);
 }
-var EmojiIcon = /* @__PURE__ */ _export_sfc(_sfc_main$8, [["render", _sfc_render$8], ["__scopeId", "data-v-2807eca1"]]);
-var FileIcons_vue_vue_type_style_index_0_scoped_true_lang = /* @__PURE__ */ (() => "input[type=file][data-v-72e996c0]{display:none}.sc-user-input--file-icon-wrapper[data-v-72e996c0]{display:block;cursor:pointer}.sc-user-input--file-icon[data-v-72e996c0]{display:block}\n")();
+var EmojiIcon = /* @__PURE__ */ _export_sfc(_sfc_main$8, [["render", _sfc_render$8], ["__scopeId", "data-v-60102486"]]);
+var FileIcons_vue_vue_type_style_index_0_scoped_true_lang = /* @__PURE__ */ (() => "input[type=file][data-v-48220874]{display:none}.sc-user-input--file-icon-wrapper[data-v-48220874]{display:block;cursor:pointer}.sc-user-input--file-icon[data-v-48220874]{display:block}\n")();
 const _sfc_main$7 = {
   props: {
     onChange: {
@@ -5760,8 +5760,8 @@ function _sfc_render$7(_ctx, _cache, $props, $setup, $data, $options) {
     }, null, 32)
   ]);
 }
-var FileIcons = /* @__PURE__ */ _export_sfc(_sfc_main$7, [["render", _sfc_render$7], ["__scopeId", "data-v-72e996c0"]]);
-var UserInputButton_vue_vue_type_style_index_0_scoped_true_lang = /* @__PURE__ */ (() => ".sc-user-input--button-icon-wrapper[data-v-552a6398]{display:block;background:none;border:none;padding:0;margin:0;outline:none;cursor:pointer}\n")();
+var FileIcons = /* @__PURE__ */ _export_sfc(_sfc_main$7, [["render", _sfc_render$7], ["__scopeId", "data-v-48220874"]]);
+var UserInputButton_vue_vue_type_style_index_0_scoped_true_lang = /* @__PURE__ */ (() => ".sc-user-input--button-icon-wrapper[data-v-5a097650]{display:block;background:none;border:none;padding:0;margin:0;outline:none;cursor:pointer}\n")();
 const _sfc_main$6 = {
   components: {
     IconBase
@@ -5795,7 +5795,7 @@ function _sfc_render$6(_ctx, _cache, $props, $setup, $data, $options) {
     }, 8, ["color", "icon-name"])
   ]);
 }
-var UserInputButton = /* @__PURE__ */ _export_sfc(_sfc_main$6, [["render", _sfc_render$6], ["__scopeId", "data-v-552a6398"]]);
+var UserInputButton = /* @__PURE__ */ _export_sfc(_sfc_main$6, [["render", _sfc_render$6], ["__scopeId", "data-v-5a097650"]]);
 var FileIcon = "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTguMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIKCSB2aWV3Qm94PSIwIDAgNTYgNTYiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDU2IDU2OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxnIGlkPSJzdmdfMSI+CiAgIDxwYXRoIGlkPSJzdmdfMiIgZmlsbD0iI0U5RTlFMCIgZD0ibTM2Ljk4NSwwbC0yOS4wMjIsMGMtMC44MDgsMCAtMS40NjMsMC42NTUgLTEuNDYzLDEuOTI2bDAsNTMuMDc0YzAsMC4zNDUgMC42NTUsMSAxLjQ2MywxbDQwLjA3NCwwYzAuODA4LDAgMS40NjMsLTAuNjU1IDEuNDYzLC0xbDAsLTQyLjAyMmMwLC0wLjY5NiAtMC4wOTMsLTAuOTIgLTAuMjU3LC0xLjA4NWwtMTEuNjM2LC0xMS42MzZjLTAuMTY1LC0wLjE2NCAtMC4zODksLTAuMjU3IC0wLjYyMiwtMC4yNTd6Ii8+CiAgIDxwb2x5Z29uIGlkPSJzdmdfMyIgZmlsbD0iI0Q5RDdDQSIgcG9pbnRzPSIzNy41LDAuMTUxIDM3LjUsMTIgNDkuMzQ5LDEyICAiLz4KICAgPHBhdGggaWQ9InN2Z180IiBmaWxsPSIjOTVBNUE1IiBkPSJtNDguMDM3LDU2bC00MC4wNzQsMGMtMC44MDgsMCAtMS40NjMsLTAuNjU1IC0xLjQ2MywtMS40NjNsMCwtMTUuNTM3bDQzLDBsMCwxNS41MzdjMCwwLjgwOCAtMC42NTUsMS40NjMgLTEuNDYzLDEuNDYzeiIvPgogICA8cGF0aCBpZD0ic3ZnXzkiIGZpbGw9IiNDOEJEQjgiIGQ9Im0xOC41LDEzbC02LDBjLTAuNTUzLDAgLTEsLTAuNDQ4IC0xLC0xczAuNDQ3LC0xIDEsLTFsNiwwYzAuNTUzLDAgMSwwLjQ0OCAxLDFzLTAuNDQ3LDEgLTEsMXoiLz4KICAgPHBhdGggaWQ9InN2Z18xMCIgZmlsbD0iI0M4QkRCOCIgZD0ibTIxLjUsMThsLTksMGMtMC41NTMsMCAtMSwtMC40NDggLTEsLTFzMC40NDcsLTEgMSwtMWw5LDBjMC41NTMsMCAxLDAuNDQ4IDEsMXMtMC40NDcsMSAtMSwxeiIvPgogICA8cGF0aCBpZD0ic3ZnXzExIiBmaWxsPSIjQzhCREI4IiBkPSJtMjUuNSwxOGMtMC4yNiwwIC0wLjUyMSwtMC4xMSAtMC43MSwtMC4yOWMtMC4xODEsLTAuMTkgLTAuMjksLTAuNDQgLTAuMjksLTAuNzFzMC4xMDksLTAuNTIgMC4zLC0wLjcxYzAuMzYsLTAuMzcgMS4wNCwtMC4zNyAxLjQxLDBjMC4xOCwwLjE5IDAuMjksMC40NSAwLjI5LDAuNzFjMCwwLjI2IC0wLjExLDAuNTIgLTAuMjksMC43MWMtMC4xOSwwLjE4IC0wLjQ1LDAuMjkgLTAuNzEsMC4yOXoiLz4KICAgPHBhdGggaWQ9InN2Z18xMiIgZmlsbD0iI0M4QkRCOCIgZD0ibTM3LjUsMThsLTgsMGMtMC41NTMsMCAtMSwtMC40NDggLTEsLTFzMC40NDcsLTEgMSwtMWw4LDBjMC41NTMsMCAxLDAuNDQ4IDEsMXMtMC40NDcsMSAtMSwxeiIvPgogICA8cGF0aCBpZD0ic3ZnXzEzIiBmaWxsPSIjQzhCREI4IiBkPSJtMTIuNSwzM2MtMC4yNiwwIC0wLjUyMSwtMC4xMSAtMC43MSwtMC4yOWMtMC4xODEsLTAuMTkgLTAuMjksLTAuNDUgLTAuMjksLTAuNzFjMCwtMC4yNiAwLjEwOSwtMC41MiAwLjI5LC0wLjcxYzAuMzcsLTAuMzcgMS4wNSwtMC4zNyAxLjQyLDAuMDFjMC4xOCwwLjE4IDAuMjksMC40NCAwLjI5LDAuN2MwLDAuMjYgLTAuMTEsMC41MiAtMC4yOSwwLjcxYy0wLjE5LDAuMTggLTAuNDUsMC4yOSAtMC43MSwwLjI5eiIvPgogICA8cGF0aCBpZD0ic3ZnXzE0IiBmaWxsPSIjQzhCREI4IiBkPSJtMjQuNSwzM2wtOCwwYy0wLjU1MywwIC0xLC0wLjQ0OCAtMSwtMXMwLjQ0NywtMSAxLC0xbDgsMGMwLjU1MywwIDEsMC40NDggMSwxcy0wLjQ0NywxIC0xLDF6Ii8+CiAgIDxwYXRoIGlkPSJzdmdfMTUiIGZpbGw9IiNDOEJEQjgiIGQ9Im00My41LDE4bC0yLDBjLTAuNTUzLDAgLTEsLTAuNDQ4IC0xLC0xczAuNDQ3LC0xIDEsLTFsMiwwYzAuNTUzLDAgMSwwLjQ0OCAxLDFzLTAuNDQ3LDEgLTEsMXoiLz4KICAgPHBhdGggaWQ9InN2Z18xNiIgZmlsbD0iI0M4QkRCOCIgZD0ibTM0LjUsMjNsLTIyLDBjLTAuNTUzLDAgLTEsLTAuNDQ4IC0xLC0xczAuNDQ3LC0xIDEsLTFsMjIsMGMwLjU1MywwIDEsMC40NDggMSwxcy0wLjQ0NywxIC0xLDF6Ii8+CiAgIDxwYXRoIGlkPSJzdmdfMTciIGZpbGw9IiNDOEJEQjgiIGQ9Im00My41LDIzbC02LDBjLTAuNTUzLDAgLTEsLTAuNDQ4IC0xLC0xczAuNDQ3LC0xIDEsLTFsNiwwYzAuNTUzLDAgMSwwLjQ0OCAxLDFzLTAuNDQ3LDEgLTEsMXoiLz4KICAgPHBhdGggaWQ9InN2Z18xOCIgZmlsbD0iI0M4QkRCOCIgZD0ibTE2LjUsMjhsLTQsMGMtMC41NTMsMCAtMSwtMC40NDggLTEsLTFzMC40NDcsLTEgMSwtMWw0LDBjMC41NTMsMCAxLDAuNDQ4IDEsMXMtMC40NDcsMSAtMSwxeiIvPgogICA8cGF0aCBpZD0ic3ZnXzE5IiBmaWxsPSIjQzhCREI4IiBkPSJtMzAuNSwyOGwtMTAsMGMtMC41NTMsMCAtMSwtMC40NDggLTEsLTFzMC40NDcsLTEgMSwtMWwxMCwwYzAuNTUzLDAgMSwwLjQ0OCAxLDFzLTAuNDQ3LDEgLTEsMXoiLz4KICAgPHBhdGggaWQ9InN2Z18yMCIgZmlsbD0iI0M4QkRCOCIgZD0ibTQzLjUsMjhsLTksMGMtMC41NTMsMCAtMSwtMC40NDggLTEsLTFzMC40NDcsLTEgMSwtMWw5LDBjMC41NTMsMCAxLDAuNDQ4IDEsMXMtMC40NDcsMSAtMSwxeiIvPgogIDwvZz4KICA8ZyBpZD0ic3ZnXzIxIi8+CiAgPGcgaWQ9InN2Z18yMiIvPgogIDxnIGlkPSJzdmdfMjMiLz4KICA8ZyBpZD0ic3ZnXzI0Ii8+CiAgPGcgaWQ9InN2Z18yNSIvPgogIDxnIGlkPSJzdmdfMjYiLz4KICA8ZyBpZD0ic3ZnXzI3Ii8+CiAgPGcgaWQ9InN2Z18yOCIvPgogIDxnIGlkPSJzdmdfMjkiLz4KICA8ZyBpZD0ic3ZnXzMwIi8+CiAgPGcgaWQ9InN2Z18zMSIvPgogIDxnIGlkPSJzdmdfMzIiLz4KICA8ZyBpZD0ic3ZnXzMzIi8+CiAgPGcgaWQ9InN2Z18zNCIvPgogIDxnIGlkPSJzdmdfMzUiLz4KPC9zdmc+";
 var CloseIconSvg = "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIKCSB2aWV3Qm94PSIwIDAgNDcuOTcxIDQ3Ljk3MSIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNDcuOTcxIDQ3Ljk3MTsiIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8Zz4KCTxwYXRoIGQ9Ik0yOC4yMjgsMjMuOTg2TDQ3LjA5Miw1LjEyMmMxLjE3Mi0xLjE3MSwxLjE3Mi0zLjA3MSwwLTQuMjQyYy0xLjE3Mi0xLjE3Mi0zLjA3LTEuMTcyLTQuMjQyLDBMMjMuOTg2LDE5Ljc0NEw1LjEyMSwwLjg4CgkJYy0xLjE3Mi0xLjE3Mi0zLjA3LTEuMTcyLTQuMjQyLDBjLTEuMTcyLDEuMTcxLTEuMTcyLDMuMDcxLDAsNC4yNDJsMTguODY1LDE4Ljg2NEwwLjg3OSw0Mi44NWMtMS4xNzIsMS4xNzEtMS4xNzIsMy4wNzEsMCw0LjI0MgoJCUMxLjQ2NSw0Ny42NzcsMi4yMzMsNDcuOTcsMyw0Ny45N3MxLjUzNS0wLjI5MywyLjEyMS0wLjg3OWwxOC44NjUtMTguODY0TDQyLjg1LDQ3LjA5MWMwLjU4NiwwLjU4NiwxLjM1NCwwLjg3OSwyLjEyMSwwLjg3OQoJCXMxLjUzNS0wLjI5MywyLjEyMS0wLjg3OWMxLjE3Mi0xLjE3MSwxLjE3Mi0zLjA3MSwwLTQuMjQyTDI4LjIyOCwyMy45ODZ6Ii8+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+";
 const _sfc_main$5 = {};
@@ -5810,7 +5810,7 @@ function _sfc_render$4(_ctx, _cache) {
   return openBlock(), createElementBlock("path", _hoisted_1$3);
 }
 var IconSend = /* @__PURE__ */ _export_sfc(_sfc_main$4, [["render", _sfc_render$4]]);
-var UserInput_vue_vue_type_style_index_0_scoped_true_lang = /* @__PURE__ */ (() => ".sc-user-input[data-v-5c4d76dc]{min-height:55px;margin:0;position:relative;bottom:0;display:flex;background-color:#f4f7f9;border-bottom-left-radius:10px;border-bottom-right-radius:10px;transition:background-color .2s ease,box-shadow .2s ease}.sc-user-input--text[data-v-5c4d76dc]{flex-grow:1;outline:none;border-bottom-left-radius:10px;box-sizing:border-box;padding:18px;font-size:15px;line-height:1.33;white-space:pre-wrap;word-wrap:break-word;color:#565867;-webkit-font-smoothing:antialiased;max-height:200px;overflow-x:hidden;overflow-y:auto}.sc-user-input--text[data-v-5c4d76dc]:empty:before{content:attr(placeholder);display:block;filter:contrast(15%);outline:none;cursor:text}.sc-user-input--buttons[data-v-5c4d76dc]{display:flex;align-items:center;padding:0 4px}.sc-user-input--button[data-v-5c4d76dc]{margin:0 4px}.sc-user-input.active[data-v-5c4d76dc]{box-shadow:none;background-color:#fff;box-shadow:0 -5px 20px #96a5be33}.file-container[data-v-5c4d76dc]{background-color:#f4f7f9;border-top-left-radius:10px;padding:5px 20px;color:#565867}.delete-file-message[data-v-5c4d76dc]{font-style:normal;float:right;cursor:pointer;color:#c8cad0}.delete-file-message[data-v-5c4d76dc]:hover{color:#5d5e6d}.icon-file-message[data-v-5c4d76dc]{margin-right:5px}\n")();
+var UserInput_vue_vue_type_style_index_0_scoped_true_lang = /* @__PURE__ */ (() => ".sc-user-input[data-v-fed60b54]{min-height:55px;margin:0;position:relative;bottom:0;display:flex;background-color:#f4f7f9;border-bottom-left-radius:10px;border-bottom-right-radius:10px;transition:background-color .2s ease,box-shadow .2s ease}.sc-user-input--text[data-v-fed60b54]{flex-grow:1;outline:none;border-bottom-left-radius:10px;box-sizing:border-box;padding:18px;font-size:15px;line-height:1.33;white-space:pre-wrap;word-wrap:break-word;color:#565867;-webkit-font-smoothing:antialiased;max-height:200px;overflow-x:hidden;overflow-y:auto}.sc-user-input--text[data-v-fed60b54]:empty:before{content:attr(placeholder);display:block;filter:contrast(15%);outline:none;cursor:text}.sc-user-input--buttons[data-v-fed60b54]{display:flex;align-items:center;padding:0 4px}.sc-user-input--button[data-v-fed60b54]{margin:0 4px}.sc-user-input.active[data-v-fed60b54]{box-shadow:none;background-color:#fff;box-shadow:0 -5px 20px #96a5be33}.file-container[data-v-fed60b54]{background-color:#f4f7f9;border-top-left-radius:10px;padding:5px 20px;color:#565867}.delete-file-message[data-v-fed60b54]{font-style:normal;float:right;cursor:pointer;color:#c8cad0}.delete-file-message[data-v-fed60b54]:hover{color:#5d5e6d}.icon-file-message[data-v-fed60b54]{margin-right:5px}\n")();
 const _sfc_main$3 = {
   components: {
     EmojiIcon,
@@ -6115,8 +6115,8 @@ function _sfc_render$3(_ctx, _cache, $props, $setup, $data, $options) {
     ], 6)
   ]);
 }
-var UserInput = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["render", _sfc_render$3], ["__scopeId", "data-v-5c4d76dc"]]);
-var UserList_vue_vue_type_style_index_0_scoped_true_lang = /* @__PURE__ */ (() => ".user-list[data-v-9418fc84]{height:100%;overflow:auto;padding-left:5px;padding-top:8px}.img-msg[data-v-9418fc84]{border-radius:50%;width:50px;margin-right:5px}.user-element[data-v-9418fc84]{font-size:20px;vertical-align:middle}\n")();
+var UserInput = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["render", _sfc_render$3], ["__scopeId", "data-v-fed60b54"]]);
+var UserList_vue_vue_type_style_index_0_scoped_true_lang = /* @__PURE__ */ (() => ".user-list[data-v-f04a20b4]{height:100%;overflow:auto;padding-left:5px;padding-top:8px}.img-msg[data-v-f04a20b4]{border-radius:50%;width:50px;margin-right:5px}.user-element[data-v-f04a20b4]{font-size:20px;vertical-align:middle}\n")();
 const _sfc_main$2 = {
   props: {
     participants: {
@@ -6170,8 +6170,8 @@ function _sfc_render$2(_ctx, _cache, $props, $setup, $data, $options) {
     ])
   ], 4);
 }
-var UserList = /* @__PURE__ */ _export_sfc(_sfc_main$2, [["render", _sfc_render$2], ["__scopeId", "data-v-9418fc84"]]);
-var ChatWindow_vue_vue_type_style_index_0_scoped_true_lang = /* @__PURE__ */ (() => ".sc-chat-window[data-v-7d5fa4ec]{width:370px;height:calc(100% - 120px);max-height:590px;position:fixed;right:25px;bottom:100px;box-sizing:border-box;box-shadow:6px 6px 24px #00000080;background:white;display:flex;flex-direction:column;justify-content:space-between;border-radius:20px;font-family:Helvetica Neue,Helvetica,Arial,sans-serif;animation:fadeIn-7d5fa4ec;animation-duration:.3s;animation-timing-function:ease-in-out}.noLauncher[data-v-7d5fa4ec]{bottom:0px;border-radius:8px 8px 0 0}.sc-chat-window.closed[data-v-7d5fa4ec]{opacity:0;display:none;bottom:90px}@keyframes fadeIn-7d5fa4ec{0%{display:none;opacity:0}to{display:flex;opacity:1}}.sc-message--me[data-v-7d5fa4ec]{text-align:right}.sc-message--them[data-v-7d5fa4ec]{text-align:left}@media (max-width: 450px){.sc-chat-window[data-v-7d5fa4ec]{width:100%;height:100%;max-height:100%;right:0px;bottom:0px;border-radius:0}.sc-chat-window[data-v-7d5fa4ec]{transition:.1s ease-in-out}.sc-chat-window.closed[data-v-7d5fa4ec]{bottom:0px}}\n")();
+var UserList = /* @__PURE__ */ _export_sfc(_sfc_main$2, [["render", _sfc_render$2], ["__scopeId", "data-v-f04a20b4"]]);
+var ChatWindow_vue_vue_type_style_index_0_scoped_true_lang = /* @__PURE__ */ (() => ".sc-chat-window[data-v-75a7f268]{width:370px;height:calc(100% - 120px);max-height:590px;position:fixed;right:25px;bottom:100px;box-sizing:border-box;box-shadow:6px 6px 24px #00000080;background:white;display:flex;flex-direction:column;justify-content:space-between;border-radius:20px;font-family:Helvetica Neue,Helvetica,Arial,sans-serif;animation:fadeIn-75a7f268;animation-duration:.3s;animation-timing-function:ease-in-out}.noLauncher[data-v-75a7f268]{bottom:0px;border-radius:8px 8px 0 0}.sc-chat-window.closed[data-v-75a7f268]{opacity:0;display:none;bottom:90px}@keyframes fadeIn-75a7f268{0%{display:none;opacity:0}to{display:flex;opacity:1}}.sc-message--me[data-v-75a7f268]{text-align:right}.sc-message--them[data-v-75a7f268]{text-align:left}@media (max-width: 450px){.sc-chat-window[data-v-75a7f268]{width:100%;height:100%;max-height:100%;right:0px;bottom:0px;border-radius:0}.sc-chat-window[data-v-75a7f268]{transition:.1s ease-in-out}.sc-chat-window.closed[data-v-75a7f268]{bottom:0px}}\n")();
 const _sfc_main$1 = {
   components: {
     Header,
@@ -6326,7 +6326,7 @@ function _sfc_render$1(_ctx, _cache, $props, $setup, $data, $options) {
     }, 8, ["messages", "participants", "show-typing-indicator", "colors", "always-scroll-to-bottom", "message-styling"])) : createCommentVNode("", true),
     !$data.showUserList ? (openBlock(), createBlock(_component_UserInput, {
       key: 3,
-      contentEditable: $props.contentEditable,
+      "content-editable": $props.contentEditable,
       "show-emoji": $props.showEmoji,
       "on-submit": $props.onUserInputSubmit,
       "show-file": $props.showFile,
@@ -6334,13 +6334,13 @@ function _sfc_render$1(_ctx, _cache, $props, $setup, $data, $options) {
       colors: $props.colors,
       onOnType: _cache[4] || (_cache[4] = ($event) => _ctx.$emit("onType")),
       onEdit: _cache[5] || (_cache[5] = ($event) => _ctx.$emit("edit", $event))
-    }, null, 8, ["contentEditable", "show-emoji", "on-submit", "show-file", "placeholder", "colors"])) : createCommentVNode("", true)
+    }, null, 8, ["content-editable", "show-emoji", "on-submit", "show-file", "placeholder", "colors"])) : createCommentVNode("", true)
   ], 2);
 }
-var ChatWindow = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["render", _sfc_render$1], ["__scopeId", "data-v-7d5fa4ec"]]);
+var ChatWindow = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["render", _sfc_render$1], ["__scopeId", "data-v-75a7f268"]]);
 var CloseIcon = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAMAAAANIilAAAAAAXNSR0IB2cksfwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAKVQTFRFAAAA////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////uP3jVQAAADd0Uk5TAE9lCAXd9XA4y/9zDQJG7HYB8Hc3yHoPQ8fuezMSoYPrEcEugj0tqb6G+Lw5ifHcKk3SIAx/MjRpS8YAAADsSURBVHic7dDJDoIwEIDhQURwQNGiIBVkUQH3BfX9H00MEvHW9qj9L3RIvkxTAJlMJvu1lI7aHtWOwm67Wk9vz3pP67Jro4+m1QyWiX2D3cJgqNmjt7ZGtjYccGAYK8R26qNjE2XMY6smU3Q9AM/F6YSTVrtnPp173pz6M969Lx1Q6rqUBgK2KvAR/UCIAoQLxEUoiCMSxyQSokmE6XKZYpQI2BVJ1wDrlKz4dXXn7PXN+G8e5lhk9TErMOd6tXCz3e2bYb/bbnj04Xg6f6bz6Xhgtxe8lu25vOKFGd/uj+8fj/uNfbVMJpP9QU/STxAzeUFqVwAAAABJRU5ErkJggg==";
 var OpenIcon = "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMTgiIGhlaWdodD0iMTgiPjxyZWN0IGlkPSJiYWNrZ3JvdW5kcmVjdCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgeD0iMCIgeT0iMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJub25lIi8+PGRlZnM+PHN0eWxlPi5he2ZpbGw6bm9uZTt9LmJ7ZmlsbDojNGU4Y2ZmO30uY3tjbGlwLXBhdGg6dXJsKCNhKTt9LmR7ZmlsbDojZmZmO30uZXtmaWxsOiNlZmY0Zjk7fTwvc3R5bGU+PGNsaXBQYXRoIGlkPSJhIj48cGF0aCBjbGFzcz0iYSIgZD0iTSAwIDAgSCAxNy41NTUgdiAxNy41NTUgSCAwIFoiIGlkPSJzdmdfMSIgdHJhbnNmb3JtPSIiLz48L2NsaXBQYXRoPjwvZGVmcz48ZyBjbGFzcz0iY3VycmVudExheWVyIiBzdHlsZT0iIj48dGl0bGU+TGF5ZXIgMTwvdGl0bGU+PGcgaWQ9InN2Z18yIiBjbGFzcz0ic2VsZWN0ZWQiIHRyYW5zZm9ybT0iIj48ZyBpZD0ic3ZnXzMiIHRyYW5zZm9ybT0iIj48ZyBjbGFzcz0iYyIgaWQ9InN2Z180IiB0cmFuc2Zvcm09IiI+PGcgaWQ9InN2Z181IiB0cmFuc2Zvcm09IiI+PHBhdGggY2xhc3M9ImQiIGQ9Ik0gMTcuNTU2IDguNzc4NDIgYSA4Ljc3OCA4Ljc3OCAwIDAgMCAtOC43NzggLTguNzc4IGEgOC43NzggOC43NzggMCAwIDAgLTguNzc4IDguNzc4IGEgOC43NDUgOC43NDUgMCAwIDAgMi4yNiA1Ljg3OSB2IDEuNDQyIGMgMCAwLjggMC40OTIgMS40NTcgMS4xIDEuNDU3IGggNS44MyBhIDAuODQzIDAuODQzIDAgMCAwIDAuMTgzIC0wLjAyIGEgOC43NzggOC43NzggMCAwIDAgOC4xODQgLTguNzU3IiBpZD0ic3ZnXzYiIHRyYW5zZm9ybT0iIi8+PC9nPjxnIGlkPSJzdmdfNyIgdHJhbnNmb3JtPSIiPjxwYXRoIGNsYXNzPSJlIiBkPSJNIDMuMTYxNDggOC45MjEgYSA5LjI5MiA5LjI5MiAwIDAgMSA2LjM4IC04Ljg4OCBjIC0wLjI1MiAtMC4wMjIgLTAuNTA2IC0wLjAzMyAtMC43NjMgLTAuMDMzIGEgOC43NzQgOC43NzQgMCAwIDAgLTguNzc4IDguNzc4IEEgOS41MDggOS41MDggMCAwIDAgMi4yMjQ0NyAxNC43MDAzIGMgMC4wMDUgMCAwIDAuMDA5IDAgMC4wMSBjIC0wLjMxMSAwLjM1MiAtMS45MjQgMi44NDkgMC4wMjEgMi44NDkgaCAyLjI1IGMgLTEuMjMgLTAuMDIyIDEuMjYzIC0yLjEwNyAwLjI2OSAtMy40OTQgYSA4LjIyNSA4LjIyNSAwIDAgMSAtMS42IC01LjE0MSIgaWQ9InN2Z184IiB0cmFuc2Zvcm09IiIvPjwvZz48L2c+PC9nPjwvZz48L2c+PC9zdmc+";
-var Launcher_vue_vue_type_style_index_0_scoped_true_lang = /* @__PURE__ */ (() => '.sc-launcher[data-v-7b5b9690]{width:60px;height:60px;background-position:center;background-repeat:no-repeat;position:fixed;right:25px;bottom:25px;border-radius:50%;box-shadow:none;transition:box-shadow .2s ease-in-out;cursor:pointer}.sc-launcher[data-v-7b5b9690]:before{content:"";position:relative;display:block;width:60px;height:60px;border-radius:50%;transition:box-shadow .2s ease-in-out}.sc-launcher .sc-open-icon[data-v-7b5b9690],.sc-launcher .sc-closed-icon[data-v-7b5b9690]{width:60px;height:60px;position:fixed;right:25px;bottom:25px;transition:opacity .1s ease-in-out,transform .1s ease-in-out}.sc-launcher .sc-closed-icon[data-v-7b5b9690]{transition:opacity .1s ease-in-out,transform .1s ease-in-out;width:60px;height:60px}.sc-launcher .sc-open-icon[data-v-7b5b9690]{padding:20px;box-sizing:border-box;opacity:1}.sc-launcher.opened .sc-open-icon[data-v-7b5b9690],.sc-launcher.opened .sc-closed-icon[data-v-7b5b9690]{transform:rotate(-90deg);opacity:1}.sc-launcher.opened[data-v-7b5b9690]:before{box-shadow:0 0 400px 250px #94959633}.sc-launcher[data-v-7b5b9690]:hover{box-shadow:0 0 27px 1.5px #0003}.sc-new-messsages-count[data-v-7b5b9690]{position:absolute;top:-3px;left:41px;display:flex;justify-content:center;flex-direction:column;border-radius:50%;width:22px;height:22px;background:#ff4646;color:#fff;text-align:center;margin:auto;font-size:12px;font-weight:500}\n')();
+var Launcher_vue_vue_type_style_index_0_scoped_true_lang = /* @__PURE__ */ (() => '.sc-launcher[data-v-3be232b9]{width:60px;height:60px;background-position:center;background-repeat:no-repeat;position:fixed;right:25px;bottom:25px;border-radius:50%;box-shadow:none;transition:box-shadow .2s ease-in-out;cursor:pointer}.sc-launcher[data-v-3be232b9]:before{content:"";position:relative;display:block;width:60px;height:60px;border-radius:50%;transition:box-shadow .2s ease-in-out}.sc-launcher .sc-open-icon[data-v-3be232b9],.sc-launcher .sc-closed-icon[data-v-3be232b9]{width:60px;height:60px;position:fixed;right:25px;bottom:25px;transition:opacity .1s ease-in-out,transform .1s ease-in-out}.sc-launcher .sc-closed-icon[data-v-3be232b9]{transition:opacity .1s ease-in-out,transform .1s ease-in-out;width:60px;height:60px}.sc-launcher .sc-open-icon[data-v-3be232b9]{padding:20px;box-sizing:border-box;opacity:1}.sc-launcher.opened .sc-open-icon[data-v-3be232b9],.sc-launcher.opened .sc-closed-icon[data-v-3be232b9]{transform:rotate(-90deg);opacity:1}.sc-launcher.opened[data-v-3be232b9]:before{box-shadow:0 0 400px 250px #94959633}.sc-launcher[data-v-3be232b9]:hover{box-shadow:0 0 27px 1.5px #0003}.sc-new-messsages-count[data-v-3be232b9]{position:absolute;top:-3px;left:41px;display:flex;justify-content:center;flex-direction:column;border-radius:50%;width:22px;height:22px;background:#ff4646;color:#fff;text-align:center;margin:auto;font-size:12px;font-weight:500}\n')();
 const _sfc_main = {
   components: {
     ChatWindow
@@ -6544,7 +6544,7 @@ function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
       "on-user-input-submit": $props.onMessageWasSent,
       participants: $props.participants,
       title: $options.chatWindowTitle,
-      contentEditable: $props.contentEditable,
+      "content-editable": $props.contentEditable,
       "is-open": $props.isOpen,
       "show-emoji": $props.showEmoji,
       "show-launcher": $props.showLauncher,
@@ -6591,10 +6591,10 @@ function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
         }, void 0, true)
       ]),
       _: 3
-    }, 8, ["message-list", "on-user-input-submit", "participants", "title", "contentEditable", "is-open", "show-emoji", "show-launcher", "show-file", "show-header", "placeholder", "show-typing-indicator", "colors", "always-scroll-to-bottom", "message-styling", "onClose"])
+    }, 8, ["message-list", "on-user-input-submit", "participants", "title", "content-editable", "is-open", "show-emoji", "show-launcher", "show-file", "show-header", "placeholder", "show-typing-indicator", "colors", "always-scroll-to-bottom", "message-styling", "onClose"])
   ]);
 }
-var Launcher = /* @__PURE__ */ _export_sfc(_sfc_main, [["render", _sfc_render], ["__scopeId", "data-v-7b5b9690"]]);
+var Launcher = /* @__PURE__ */ _export_sfc(_sfc_main, [["render", _sfc_render], ["__scopeId", "data-v-3be232b9"]]);
 function _typeof(obj) {
   "@babel/helpers - typeof";
   return _typeof = typeof Symbol == "function" && typeof Symbol.iterator == "symbol" ? function(obj2) {

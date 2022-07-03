@@ -3,18 +3,18 @@
 </template>
 
 <script>
-export default {
-  props: {
-    data: {
-      type: Object,
-      required: true
+  export default {
+    props: {
+      data: {
+        type: Object,
+        required: true
+      }
     }
   }
-}
 </script>
 
 <style scoped>
-.sc-message--emoji {
-  font-size: 40px;
-}
+  .sc-message--emoji {
+    font-size: 40px;
+  }
 </style>

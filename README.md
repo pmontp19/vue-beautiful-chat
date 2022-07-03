@@ -26,6 +26,7 @@ Go to [FAQ](#faq) ⬇️
 ## [Demo](https://mattmezza.github.io/vue-beautiful-chat/)
 
 ## Table of Contents
+
 - [Installation](#installation)
 - [Example](#example)
 - [Components](#components)
@@ -37,6 +38,7 @@ $ yarn add vue-beautiful-chat
 ```
 
 ## Example
+
 ```javascript
 import Chat from 'vue-beautiful-chat'
 Vue.use(Chat)
@@ -68,10 +70,12 @@ Vue.use(Chat)
       :messageStyling="messageStyling"
       @onType="handleOnType"
       @edit="editMessage"
-      @option="handleOption" />
+      @option="handleOption"
+    />
   </div>
 </template>
 ```
+
 ```javascript
 export default {
   name: 'app',
@@ -86,22 +90,26 @@ export default {
         {
           id: 'user2',
           name: 'Support',
-          imageUrl: 'https://avatars3.githubusercontent.com/u/37018832?s=200&v=4'
+          imageUrl:
+            'https://avatars3.githubusercontent.com/u/37018832?s=200&v=4'
         }
       ], // the list of all the participant of the conversation. `name` is the user name, `id` is used to establish the author of a message, `imageUrl` is supposed to be the user avatar.
-      titleImageUrl: 'https://a.slack-edge.com/66f9/img/avatars-teams/ava_0001-34.png',
+      titleImageUrl:
+        'https://a.slack-edge.com/66f9/img/avatars-teams/ava_0001-34.png',
       messageList: [
-          { type: 'text', author: `me`, data: { text: `Say yes!` } },
-          { type: 'text', author: `user1`, data: { text: `No.` } },
-          { type: 'text', author: `user1`, data: { text: `No.`, options: [
-            { text: 'option 1',
-              value: 'option1'
-            },
-            { text: 'option 2',
-              value: 'option2'
-            }
-            ]}
+        { type: 'text', author: `me`, data: { text: `Say yes!` } },
+        { type: 'text', author: `user1`, data: { text: `No.` } },
+        {
+          type: 'text',
+          author: `user1`,
+          data: {
+            text: `No.`,
+            options: [
+              { text: 'option 1', value: 'option1' },
+              { text: 'option 2', value: 'option2' }
+            ]
           }
+        }
       ], // the list of the messages to show, can be paginated and adjusted dynamically
       newMessagesCount: 0,
       isChatOpen: false, // to determine whether the chat window should be open or closed
@@ -135,36 +143,42 @@ export default {
     }
   },
   methods: {
-    sendMessage (text) {
+    sendMessage(text) {
       if (text.length > 0) {
-        this.newMessagesCount = this.isChatOpen ? this.newMessagesCount : this.newMessagesCount + 1
-        this.onMessageWasSent({ author: 'support', type: 'text', data: { text } })
+        this.newMessagesCount = this.isChatOpen
+          ? this.newMessagesCount
+          : this.newMessagesCount + 1
+        this.onMessageWasSent({
+          author: 'support',
+          type: 'text',
+          data: { text }
+        })
       }
     },
-    onMessageWasSent (message) {
+    onMessageWasSent(message) {
       // called when the user sends a message
-      this.messageList = [ ...this.messageList, message ]
+      this.messageList = [...this.messageList, message]
     },
-    openChat () {
+    openChat() {
       // called when the user clicks on the fab button to open the chat
       this.isChatOpen = true
       this.newMessagesCount = 0
     },
-    closeChat () {
+    closeChat() {
       // called when the user clicks on the botton to close the chat
       this.isChatOpen = false
     },
-    handleScrollToTop () {
+    handleScrollToTop() {
       // called when the user scrolls message list to top
       // leverage pagination for loading another page of messages
     },
-    handleOnType () {
+    handleOnType() {
       console.log('Emit typing event')
     },
-    editMessage(message){
-      const m = this.messageList.find(m=>m.id === message.id);
-      m.isEdited = true;
-      m.data.text = message.data.text;
+    editMessage(message) {
+      const m = this.messageList.find((m) => m.id === message.id)
+      m.isEdited = true
+      m.data.text = message.data.text
     }
   }
 }
@@ -180,31 +194,31 @@ For more detailed examples see the demo folder.
 
 #### Props
 
-|prop | type   | description |
-|-----|--------|---------------|
-| *participants | [agentProfile] | Represents your product or service's customer service agents. Fields for each agent: id, name, imageUrl|
-| *onMessageWasSent | function(message) | Called when a message is sent with the message object as an argument. |
-| *isOpen | Boolean | The bool indicating whether or not the chat window should be open. |
-| *open | Function | The function passed to the component that mutates the above mentioned bool toggle for opening the chat |
-| *close | Function | The function passed to the component that mutates the above mentioned bool toggle for closing the chat |
-| messageList | [message] | An array of message objects to be rendered as a conversation. |
-| showEmoji | Boolean | A bool indicating whether or not to show the emoji button
-| showFile | Boolean | A bool indicating whether or not to show the file chooser button
-| showDeletion | Boolean | A bool indicating whether or not to show the edit button for a message
-| showEdition | Boolean | A bool indicating whether or not to show the delete button for a message
-| showTypingIndicator | String | A string that can be set to a user's participant.id to show `typing` indicator for them
-| showHeader | Boolean | A bool indicating whether or not to show the header of chatwindow
-| disableUserListToggle | Boolean | A bool indicating whether or not to allow the user to toggle between message list and participants list
-| colors | Object | An object containing the specs of the colors used to paint the component. [See here](#faq)
-| messageStyling | Boolean | A bool indicating whether or not to enable `msgdown` support for message formatting in chat. [See here](#faq)
+| prop                  | type              | description                                                                                                   |
+| --------------------- | ----------------- | ------------------------------------------------------------------------------------------------------------- |
+| \*participants        | [agentProfile]    | Represents your product or service's customer service agents. Fields for each agent: id, name, imageUrl       |
+| \*onMessageWasSent    | function(message) | Called when a message is sent with the message object as an argument.                                         |
+| \*isOpen              | Boolean           | The bool indicating whether or not the chat window should be open.                                            |
+| \*open                | Function          | The function passed to the component that mutates the above mentioned bool toggle for opening the chat        |
+| \*close               | Function          | The function passed to the component that mutates the above mentioned bool toggle for closing the chat        |
+| messageList           | [message]         | An array of message objects to be rendered as a conversation.                                                 |
+| showEmoji             | Boolean           | A bool indicating whether or not to show the emoji button                                                     |
+| showFile              | Boolean           | A bool indicating whether or not to show the file chooser button                                              |
+| showDeletion          | Boolean           | A bool indicating whether or not to show the edit button for a message                                        |
+| showEdition           | Boolean           | A bool indicating whether or not to show the delete button for a message                                      |
+| showTypingIndicator   | String            | A string that can be set to a user's participant.id to show `typing` indicator for them                       |
+| showHeader            | Boolean           | A bool indicating whether or not to show the header of chatwindow                                             |
+| disableUserListToggle | Boolean           | A bool indicating whether or not to allow the user to toggle between message list and participants list       |
+| colors                | Object            | An object containing the specs of the colors used to paint the component. [See here](#faq)                    |
+| messageStyling        | Boolean           | A bool indicating whether or not to enable `msgdown` support for message formatting in chat. [See here](#faq) |
 
 #### Events
 
-|event | params   | description |
-|-----|--------|---------------|
-| onType | undefined | Fires when user types on the message input |
-| edit | `message` | Fires after user edited message |
-| option | `optionPicked` | Fires when user chooses an option |
+| event  | params         | description                                |
+| ------ | -------------- | ------------------------------------------ |
+| onType | undefined      | Fires when user types on the message input |
+| edit   | `message`      | Fires after user edited message            |
+| option | `optionPicked` | Fires when user chooses an option          |
 
 #### Slots
 
@@ -214,7 +228,7 @@ Replacing default header.
 
 ```vue
 <template v-slot:header>
-  🤔 Good chat between {{participants.map(m=>m.name).join(' & ')}}
+  🤔 Good chat between {{ participants.map((m) => m.name).join(' & ') }}
 </template>
 ```
 
@@ -225,8 +239,11 @@ Params: `message`, `user`
 
 ```vue
 <template v-slot:user-avatar="{ message, user }">
-  <div style="border-radius:50%; color: pink; font-size: 15px; line-height:25px; text-align:center;background: tomato; width: 25px !important; height: 25px !important; min-width: 30px;min-height: 30px;margin: 5px; font-weight:bold" v-if="message.type === 'text' && user && user.name">
-    {{user.name.toUpperCase()[0]}}
+  <div
+    style="border-radius:50%; color: pink; font-size: 15px; line-height:25px; text-align:center;background: tomato; width: 25px !important; height: 25px !important; min-width: 30px;min-height: 30px;margin: 5px; font-weight:bold"
+    v-if="message.type === 'text' && user && user.name"
+  >
+    {{ user.name.toUpperCase()[0] }}
   </div>
 </template>
 ```
@@ -239,9 +256,9 @@ Params: `message`
 ```vue
 <template v-slot:text-message-body="{ message }">
   <small style="background:red" v-if="message.meta">
-    {{message.meta}}
+    {{ message.meta }}
   </small>
-  {{message.text}}
+  {{ message.text }}
 </template>
 ```
 
@@ -252,7 +269,7 @@ Params: `message`
 
 ```vue
 <template v-slot:system-message-body="{ message }">
-  [System]: {{message.text}}
+  [System]: {{ message.text }}
 </template>
 ```
 
@@ -315,9 +332,9 @@ Message objects are rendered differently depending on their type. Currently, onl
 
   {
     type: 'process',
-    data: { 
-      text: 'Estamos avisando a tu asesor', 
-      loading: true 
+    data: {
+      text: 'Estamos avisando a tu asesor',
+      loading: true
     }
   }
 
@@ -327,7 +344,6 @@ Message objects are rendered differently depending on their type. Currently, onl
   }
 }
 ```
-
 
 #### Quick replies
 
@@ -416,9 +432,7 @@ let redColors = {
 ```
 
 ```vue
-<beautiful-chat
-  ...
-  :colors="redColors" />
+<beautiful-chat ... :colors="redColors" />
 ```
 
 This is the red variant. Please check [this file](https://github.com/mattmezza/vue-beautiful-chat/tree/master/demo/src/colors.js) for the list of variants shown in the demo page online.

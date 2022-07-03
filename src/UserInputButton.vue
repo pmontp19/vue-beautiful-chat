@@ -13,33 +13,33 @@
 </template>
 
 <script>
-import IconBase from './components/IconBase.vue'
+  import IconBase from './components/IconBase.vue'
 
-export default {
-  components: {
-    IconBase
-  },
-  props: {
-    color: {
-      type: String,
-      required: true
+  export default {
+    components: {
+      IconBase
     },
-    tooltip: {
-      type: String,
-      default: ''
+    props: {
+      color: {
+        type: String,
+        required: true
+      },
+      tooltip: {
+        type: String,
+        default: ''
+      }
     }
   }
-}
 </script>
 
 <style scoped>
-.sc-user-input--button-icon-wrapper {
-  display: block;
-  background: none;
-  border: none;
-  padding: 0px;
-  margin: 0px;
-  outline: none;
-  cursor: pointer;
-}
+  .sc-user-input--button-icon-wrapper {
+    display: block;
+    background: none;
+    border: none;
+    padding: 0px;
+    margin: 0px;
+    outline: none;
+    cursor: pointer;
+  }
 </style>

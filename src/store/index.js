@@ -26,4 +26,4 @@ function mapState(keys) {
 }
 
 export default store
-export {mapState}
+export { mapState }

@@ -15,34 +15,34 @@
 </template>
 
 <script>
-export default {
-  props: {
-    iconName: {
-      type: String,
-      default: 'box'
-    },
-    width: {
-      type: [Number, String],
-      default: 18
-    },
-    height: {
-      type: [Number, String],
-      default: 18
-    },
-    viewBox: {
-      type: String,
-      default: '0 0 18 18'
-    },
-    iconColor: {
-      type: String,
-      default: 'currentColor'
+  export default {
+    props: {
+      iconName: {
+        type: String,
+        default: 'box'
+      },
+      width: {
+        type: [Number, String],
+        default: 18
+      },
+      height: {
+        type: [Number, String],
+        default: 18
+      },
+      viewBox: {
+        type: String,
+        default: '0 0 18 18'
+      },
+      iconColor: {
+        type: String,
+        default: 'currentColor'
+      }
     }
   }
-}
 </script>
 
 <style scoped>
-svg {
-  display: block;
-}
+  svg {
+    display: block;
+  }
 </style>

@@ -4,7 +4,11 @@
       class="sc-message--content"
       :class="{
         sent: message.author === 'me',
-        received: message.author !== 'me' && message.type !== 'system' && message.type !== 'process' && message.type !== 'welcome',
+        received:
+          message.author !== 'me' &&
+          message.type !== 'system' &&
+          message.type !== 'process' &&
+          message.type !== 'welcome',
         system: message.type === 'system',
         process: message.type === 'process',
         welcome: message.type === 'welcome'
@@ -12,7 +16,13 @@
     >
       <slot name="user-avatar" :message="message" :user="user">
         <div
-          v-if="message.type !== 'system' && message.type !== 'process' && message.type !== 'welcome' && authorName && authorName !== 'me'"
+          v-if="
+            message.type !== 'system' &&
+            message.type !== 'process' &&
+            message.type !== 'welcome' &&
+            authorName &&
+            authorName !== 'me'
+          "
           v-tooltip="authorName"
           :title="authorName"
           class="sc-message--avatar"
@@ -29,18 +39,22 @@
         :message-styling="messageStyling"
         @remove="$emit('remove')"
       >
-        <template v-slot:default="scopedProps">
+        <template #default="scopedProps">
           <slot
             name="text-message-body"
             :message="scopedProps.message"
-            :messageText="scopedProps.messageText"
-            :messageColors="scopedProps.messageColors"
+            :message-text="scopedProps.messageText"
+            :message-colors="scopedProps.messageColors"
             :me="scopedProps.me"
           >
           </slot>
         </template>
-        <template v-slot:text-message-toolbox="scopedProps">
-          <slot name="text-message-toolbox" :message="scopedProps.message" :me="scopedProps.me">
+        <template #text-message-toolbox="scopedProps">
+          <slot
+            name="text-message-toolbox"
+            :message="scopedProps.message"
+            :me="scopedProps.me"
+          >
           </slot>
         </template>
       </TextMessage>
@@ -50,14 +64,14 @@
         :data="message.data"
         :message-colors="messageColors"
       />
-      <TypingMessage v-else-if="message.type === 'typing'" :message-colors="messageColors" />
-      <SystemMessage
-        v-else-if="message.type === 'system'"
-        :data="message.data"
-      >
+      <TypingMessage
+        v-else-if="message.type === 'typing'"
+        :message-colors="messageColors"
+      />
+      <SystemMessage v-else-if="message.type === 'system'" :data="message.data">
         <slot name="system-message-body" :message="message.data"> </slot>
       </SystemMessage>
-      
+
       <OptionMessage
         v-if="message.type === 'options'"
         :message="message"
@@ -66,18 +80,22 @@
         @remove="$emit('remove')"
         @option="$emit('option', $event)"
       >
-        <template v-slot:default="scopedProps">
+        <template #default="scopedProps">
           <slot
             name="text-message-body"
             :message="scopedProps.message"
-            :messageText="scopedProps.messageText"
-            :messageColors="scopedProps.messageColors"
+            :message-text="scopedProps.messageText"
+            :message-colors="scopedProps.messageColors"
             :me="scopedProps.me"
           >
           </slot>
         </template>
-        <template v-slot:text-message-toolbox="scopedProps">
-          <slot name="text-message-toolbox" :message="scopedProps.message" :me="scopedProps.me">
+        <template #text-message-toolbox="scopedProps">
+          <slot
+            name="text-message-toolbox"
+            :message="scopedProps.message"
+            :me="scopedProps.me"
+          >
           </slot>
         </template>
       </OptionMessage>
@@ -89,253 +107,261 @@
       >
       </ProcessMessage>
 
-      <WelcomeMessage
-        v-if="message.type === 'welcome'"
-        :data="message.data"
-        >
-        </WelcomeMessage>
-
+      <WelcomeMessage v-if="message.type === 'welcome'" :data="message.data">
+      </WelcomeMessage>
     </div>
   </div>
 </template>
 
 <script>
-import TextMessage from './messages/TextMessage.vue'
-import FileMessage from './messages/FileMessage.vue'
-import EmojiMessage from './messages/EmojiMessage.vue'
-import TypingMessage from './messages/TypingMessage.vue'
-import SystemMessage from './messages/SystemMessage.vue'
-import OptionMessage from './messages/OptionMessage.vue'
-import ProcessMessage from './messages/ProcessMessage.vue'
-import WelcomeMessage from './messages/WelcomeMessage.vue'
-import chatIcon from './assets/chat-icon.svg'
+  import TextMessage from './messages/TextMessage.vue'
+  import FileMessage from './messages/FileMessage.vue'
+  import EmojiMessage from './messages/EmojiMessage.vue'
+  import TypingMessage from './messages/TypingMessage.vue'
+  import SystemMessage from './messages/SystemMessage.vue'
+  import OptionMessage from './messages/OptionMessage.vue'
+  import ProcessMessage from './messages/ProcessMessage.vue'
+  import WelcomeMessage from './messages/WelcomeMessage.vue'
+  import chatIcon from './assets/chat-icon.svg'
 
-export default {
-  components: {
-    TextMessage,
-    FileMessage,
-    EmojiMessage,
-    TypingMessage,
-    SystemMessage,
-    OptionMessage,
-    OptionMessage,
-    ProcessMessage,
-    WelcomeMessage,
-    WelcomeMessage
-},
-  props: {
-    message: {
-      type: Object,
-      required: true
+  export default {
+    components: {
+      TextMessage,
+      FileMessage,
+      EmojiMessage,
+      TypingMessage,
+      SystemMessage,
+      OptionMessage,
+      OptionMessage,
+      ProcessMessage,
+      WelcomeMessage,
+      WelcomeMessage
     },
-    colors: {
-      type: Object,
-      required: true
+    props: {
+      message: {
+        type: Object,
+        required: true
+      },
+      colors: {
+        type: Object,
+        required: true
+      },
+      messageStyling: {
+        type: Boolean,
+        required: true
+      },
+      user: {
+        type: Object,
+        required: true
+      }
     },
-    messageStyling: {
-      type: Boolean,
-      required: true
-    },
-    user: {
-      type: Object,
-      required: true
-    }
-  },
-  computed: {
-    class () {
-      return this.message.author !== 'me' && this.message.type !== 'system' && !this.message.type === 'process' && !this.message.type === 'welcome'
-    },
-    authorName() {
-      return this.user && this.user.name
-    },
-    chatImageUrl() {
-      return (this.user && this.user.imageUrl) || chatIcon
-    },
-    messageColors() {
-      if (this.message.author.toLowerCase().includes('bot') && this.message.type !== 'typing') {
-        return {
-          color: this.colors.receivedMessage.bot_text,
-          backgroundColor: this.colors.receivedMessage.bot_bg
+    computed: {
+      class() {
+        return (
+          this.message.author !== 'me' &&
+          this.message.type !== 'system' &&
+          !this.message.type === 'process' &&
+          !this.message.type === 'welcome'
+        )
+      },
+      authorName() {
+        return this.user && this.user.name
+      },
+      chatImageUrl() {
+        return (this.user && this.user.imageUrl) || chatIcon
+      },
+      messageColors() {
+        if (
+          this.message.author.toLowerCase().includes('bot') &&
+          this.message.type !== 'typing'
+        ) {
+          return {
+            color: this.colors.receivedMessage.bot_text,
+            backgroundColor: this.colors.receivedMessage.bot_bg
+          }
         }
-      }
-      return this.message.author === 'me' ? this.sentColorsStyle : this.receivedColorsStyle
-    },
-    receivedColorsStyle() {
-      return {
-        color: this.colors.receivedMessage.text,
-        backgroundColor: this.colors.receivedMessage.bg
-      }
-    },
-    sentColorsStyle() {
-      return {
-        color: this.colors.sentMessage.text,
-        backgroundColor: this.colors.sentMessage.bg
+        return this.message.author === 'me'
+          ? this.sentColorsStyle
+          : this.receivedColorsStyle
+      },
+      receivedColorsStyle() {
+        return {
+          color: this.colors.receivedMessage.text,
+          backgroundColor: this.colors.receivedMessage.bg
+        }
+      },
+      sentColorsStyle() {
+        return {
+          color: this.colors.sentMessage.text,
+          backgroundColor: this.colors.sentMessage.bg
+        }
       }
     }
   }
-}
 </script>
 
 <style lang="scss">
-/* TODO: re-org and scope this style block */
+  /* TODO: re-org and scope this style block */
 
-.sc-message {
-  margin-bottom: 10px;
-  display: flex;
-  .sc-message--edited {
-    opacity: 0.7;
-    word-wrap: normal;
+  .sc-message {
+    margin-bottom: 10px;
+    display: flex;
+    .sc-message--edited {
+      opacity: 0.7;
+      word-wrap: normal;
+      font-size: xx-small;
+      text-align: center;
+    }
+  }
+
+  .sc-message--content {
+    width: 100%;
+    display: flex;
+  }
+
+  .sc-message--content.sent {
+    justify-content: flex-end;
+  }
+
+  .sc-message--content.system,
+  .sc-message--content.process,
+  .sc-message--content.welcome {
+    justify-content: center;
+  }
+
+  .sc-message--content.sent .sc-message--avatar {
+    display: none;
+  }
+
+  .sc-message--avatar {
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    min-width: 30px;
+    min-height: 30px;
+    border-radius: 50%;
+    align-self: center;
+    margin-right: 15px;
+  }
+
+  .sc-message--meta {
     font-size: xx-small;
+    margin-bottom: 0px;
+    color: #77838f;
     text-align: center;
   }
-}
 
-.sc-message--content {
-  width: 100%;
-  display: flex;
-}
-
-.sc-message--content.sent {
-  justify-content: flex-end;
-}
-
-.sc-message--content.system, .sc-message--content.process, .sc-message--content.welcome {
-  justify-content: center;
-}
-
-.sc-message--content.sent .sc-message--avatar {
-  display: none;
-}
-
-.sc-message--avatar {
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: center;
-  min-width: 30px;
-  min-height: 30px;
-  border-radius: 50%;
-  align-self: center;
-  margin-right: 15px;
-}
-
-.sc-message--meta {
-  font-size: xx-small;
-  margin-bottom: 0px;
-  color: #77838F;
-  text-align: center;
-}
-
-@media (max-width: 450px) {
-  .sc-message {
-    // width: 80%;
-  }
-}
-
-.tooltip {
-  display: block !important;
-  z-index: 10000;
-  .tooltip-inner {
-    background: black;
-    color: white;
-    border-radius: 16px;
-    padding: 5px 10px 4px;
-  }
-  .tooltip-arrow {
-    width: 0;
-    height: 0;
-    border-style: solid;
-    position: absolute;
-    margin: 5px;
-    border-color: black;
-    z-index: 1;
-  }
-  &[x-placement^='top'] {
-    margin-bottom: 5px;
-    .tooltip-arrow {
-      border-width: 5px 5px 0 5px;
-      border-left-color: transparent !important;
-      border-right-color: transparent !important;
-      border-bottom-color: transparent !important;
-      bottom: -5px;
-      left: calc(50% - 5px);
-      margin-top: 0;
-      margin-bottom: 0;
+  @media (max-width: 450px) {
+    .sc-message {
+      // width: 80%;
     }
   }
-  &[x-placement^='bottom'] {
-    margin-top: 5px;
-    .tooltip-arrow {
-      border-width: 0 5px 5px 5px;
-      border-left-color: transparent !important;
-      border-right-color: transparent !important;
-      border-top-color: transparent !important;
-      top: -5px;
-      left: calc(50% - 5px);
-      margin-top: 0;
-      margin-bottom: 0;
-    }
-  }
-  &[x-placement^='right'] {
-    margin-left: 5px;
-    .tooltip-arrow {
-      border-width: 5px 5px 5px 0;
-      border-left-color: transparent !important;
-      border-top-color: transparent !important;
-      border-bottom-color: transparent !important;
-      left: -5px;
-      top: calc(50% - 5px);
-      margin-left: 0;
-      margin-right: 0;
-    }
-  }
-  &[x-placement^='left'] {
-    margin-right: 5px;
-    .tooltip-arrow {
-      border-width: 5px 0 5px 5px;
-      border-top-color: transparent !important;
-      border-right-color: transparent !important;
-      border-bottom-color: transparent !important;
-      right: -5px;
-      top: calc(50% - 5px);
-      margin-left: 0;
-      margin-right: 0;
-    }
-  }
-  &[aria-hidden='true'] {
-    visibility: hidden;
-    opacity: 0;
-    transition: opacity 0.15s, visibility 0.15s;
-  }
-  &[aria-hidden='false'] {
-    visibility: visible;
-    opacity: 1;
-    transition: opacity 0.15s;
-  }
-  &.info {
-    $color: rgba(#004499, 0.9);
+
+  .tooltip {
+    display: block !important;
+    z-index: 10000;
     .tooltip-inner {
-      background: $color;
+      background: black;
       color: white;
-      padding: 24px;
-      border-radius: 5px;
-      box-shadow: 0 5px 30px rgba(black, 0.1);
+      border-radius: 16px;
+      padding: 5px 10px 4px;
     }
     .tooltip-arrow {
-      border-color: $color;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      position: absolute;
+      margin: 5px;
+      border-color: black;
+      z-index: 1;
+    }
+    &[x-placement^='top'] {
+      margin-bottom: 5px;
+      .tooltip-arrow {
+        border-width: 5px 5px 0 5px;
+        border-left-color: transparent !important;
+        border-right-color: transparent !important;
+        border-bottom-color: transparent !important;
+        bottom: -5px;
+        left: calc(50% - 5px);
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+    }
+    &[x-placement^='bottom'] {
+      margin-top: 5px;
+      .tooltip-arrow {
+        border-width: 0 5px 5px 5px;
+        border-left-color: transparent !important;
+        border-right-color: transparent !important;
+        border-top-color: transparent !important;
+        top: -5px;
+        left: calc(50% - 5px);
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+    }
+    &[x-placement^='right'] {
+      margin-left: 5px;
+      .tooltip-arrow {
+        border-width: 5px 5px 5px 0;
+        border-left-color: transparent !important;
+        border-top-color: transparent !important;
+        border-bottom-color: transparent !important;
+        left: -5px;
+        top: calc(50% - 5px);
+        margin-left: 0;
+        margin-right: 0;
+      }
+    }
+    &[x-placement^='left'] {
+      margin-right: 5px;
+      .tooltip-arrow {
+        border-width: 5px 0 5px 5px;
+        border-top-color: transparent !important;
+        border-right-color: transparent !important;
+        border-bottom-color: transparent !important;
+        right: -5px;
+        top: calc(50% - 5px);
+        margin-left: 0;
+        margin-right: 0;
+      }
+    }
+    &[aria-hidden='true'] {
+      visibility: hidden;
+      opacity: 0;
+      transition: opacity 0.15s, visibility 0.15s;
+    }
+    &[aria-hidden='false'] {
+      visibility: visible;
+      opacity: 1;
+      transition: opacity 0.15s;
+    }
+    &.info {
+      $color: rgba(#004499, 0.9);
+      .tooltip-inner {
+        background: $color;
+        color: white;
+        padding: 24px;
+        border-radius: 5px;
+        box-shadow: 0 5px 30px rgba(black, 0.1);
+      }
+      .tooltip-arrow {
+        border-color: $color;
+      }
+    }
+    &.popover {
+      $color: #f9f9f9;
+      .popover-inner {
+        background: $color;
+        color: black;
+        padding: 24px;
+        border-radius: 5px;
+        box-shadow: 0 5px 30px rgba(black, 0.1);
+      }
+      .popover-arrow {
+        border-color: $color;
+      }
     }
   }
-  &.popover {
-    $color: #f9f9f9;
-    .popover-inner {
-      background: $color;
-      color: black;
-      padding: 24px;
-      border-radius: 5px;
-      box-shadow: 0 5px 30px rgba(black, 0.1);
-    }
-    .popover-arrow {
-      border-color: $color;
-    }
-  }
-}
 </style>

@@ -91,7 +91,7 @@
     },
     methods: {
       edit() {
-        store.setState('editMessage', this.message)
+        store.editMessage = this.message
       }
     }
   }

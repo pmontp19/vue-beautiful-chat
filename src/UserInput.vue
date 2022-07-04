@@ -287,7 +287,7 @@
         this.file = file
       },
       _editFinish() {
-        store.setState('editMessage', null)
+        store.editMessage = null
       }
     }
   }

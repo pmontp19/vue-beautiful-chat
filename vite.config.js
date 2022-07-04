@@ -4,6 +4,7 @@ import vue from '@vitejs/plugin-vue'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  plugins: [vue()],
   build: {
     lib: {
       entry: path.resolve(__dirname, 'src/index.js'),
@@ -11,13 +12,14 @@ export default defineConfig({
       fileName: (format) => `vue-beautiful-chat.${format}.js`
     },
     rollupOptions: {
-      external: ['vue'],
+      external: ['vue','@vue/composition-api'],
       output: {
         globals: {
-          vue: 'Vue'
+          vue: "Vue",
+          '@vue/composition-api': 'compositionApi'
         }
       }
-    }
-  },
-  plugins: [vue()]
+    },
+    sourcemap: true
+  }
 })

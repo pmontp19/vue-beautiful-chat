@@ -3,15 +3,16 @@
  * and instantiated externally
  **/
 
-import Vue from 'vue'
+import {reactive} from 'vue'
+import { set } from '@vue/composition-api'
 
 const store = {
-  state: Vue.observable({
+  state: reactive({
     editMessage: null
   }),
 
   setState(key, val) {
-    Vue.set(this.state, key, val)
+    set(this.state, key, val)
   }
 }
 

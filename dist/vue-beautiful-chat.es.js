@@ -1504,7 +1504,7 @@ var Autolinker$1 = { exports: {} };
   });
 })(Autolinker$1);
 var Autolinker = Autolinker$1.exports;
-var TextMessage_vue_vue_type_style_index_0_scoped_true_lang = /* @__PURE__ */ (() => ".sc-message--text[data-v-6ae2f035]{padding:5px 20px;border-radius:6px;font-weight:300;font-size:14px;line-height:1.4;position:relative;-webkit-font-smoothing:subpixel-antialiased}.sc-message--text .sc-message--text-content[data-v-6ae2f035]{white-space:pre-wrap}.sc-message--text:hover .sc-message--toolbox[data-v-6ae2f035]{left:-20px;opacity:1}.sc-message--text .sc-message--toolbox[data-v-6ae2f035]{transition:left .2s ease-out 0s;white-space:normal;opacity:0;position:absolute;left:0px;width:25px;top:0}.sc-message--text .sc-message--toolbox button[data-v-6ae2f035]{background:none;border:none;padding:0;margin:0;outline:none;width:100%;text-align:center;cursor:pointer}.sc-message--text .sc-message--toolbox button[data-v-6ae2f035]:focus{outline:none}.sc-message--text .sc-message--toolbox[data-v-6ae2f035] svg{margin-left:5px}.sc-message--text code[data-v-6ae2f035]{font-family:Courier New,Courier,monospace!important}.sc-message--content.sent .sc-message--text[data-v-6ae2f035]{color:#fff;background-color:#4e8cff;max-width:calc(100% - 120px);word-wrap:break-word;border-radius:24px 24px 0}.sc-message--content.received .sc-message--text[data-v-6ae2f035]{color:#263238;background-color:#f4f7f9;margin-right:40px;border-radius:0 24px 24px}a.chatLink[data-v-6ae2f035]{color:inherit!important}\n")();
+var TextMessage_vue_vue_type_style_index_0_scoped_true_lang = /* @__PURE__ */ (() => ".sc-message--text[data-v-de37f26e]{padding:5px 20px;border-radius:6px;font-weight:300;font-size:14px;line-height:1.4;position:relative;-webkit-font-smoothing:subpixel-antialiased}.sc-message--text .sc-message--text-content[data-v-de37f26e]{white-space:pre-wrap}.sc-message--text:hover .sc-message--toolbox[data-v-de37f26e]{left:-20px;opacity:1}.sc-message--text .sc-message--toolbox[data-v-de37f26e]{transition:left .2s ease-out 0s;white-space:normal;opacity:0;position:absolute;left:0px;width:25px;top:0}.sc-message--text .sc-message--toolbox button[data-v-de37f26e]{background:none;border:none;padding:0;margin:0;outline:none;width:100%;text-align:center;cursor:pointer}.sc-message--text .sc-message--toolbox button[data-v-de37f26e]:focus{outline:none}.sc-message--text .sc-message--toolbox[data-v-de37f26e] svg{margin-left:5px}.sc-message--text code[data-v-de37f26e]{font-family:Courier New,Courier,monospace!important}.sc-message--content.sent .sc-message--text[data-v-de37f26e]{color:#fff;background-color:#4e8cff;max-width:calc(100% - 120px);word-wrap:break-word;border-radius:24px 24px 0}.sc-message--content.received .sc-message--text[data-v-de37f26e]{color:#263238;background-color:#f4f7f9;margin-right:40px;border-radius:0 24px 24px}a.chatLink[data-v-de37f26e]{color:inherit!important}\n")();
 const fmt$1 = require("msgdown");
 const _sfc_main$k = {
   components: {
@@ -1544,7 +1544,7 @@ const _sfc_main$k = {
   },
   methods: {
     edit() {
-      store.editMessage = this.message;
+      store.setStateS("editMessage", this.message);
     }
   }
 };
@@ -1635,7 +1635,7 @@ function _sfc_render$k(_ctx, _cache, $props, $setup, $data, $options) {
     ], true)
   ], 4);
 }
-var TextMessage = /* @__PURE__ */ _export_sfc(_sfc_main$k, [["render", _sfc_render$k], ["__scopeId", "data-v-6ae2f035"]]);
+var TextMessage = /* @__PURE__ */ _export_sfc(_sfc_main$k, [["render", _sfc_render$k], ["__scopeId", "data-v-de37f26e"]]);
 var FileMessage_vue_vue_type_style_index_0_scoped_true_lang = /* @__PURE__ */ (() => ".sc-message--file[data-v-5d8a7a52]{border-radius:6px;font-weight:300;font-size:14px;line-height:1.4;-webkit-font-smoothing:subpixel-antialiased}.sc-message--content.sent .sc-message--file[data-v-5d8a7a52]{word-wrap:break-word}.sc-message--file-icon[data-v-5d8a7a52]{text-align:center;margin:15px auto 0}.sc-image[data-v-5d8a7a52]{max-width:100%;min-width:100%}.sc-message--file-text[data-v-5d8a7a52]{padding:17px 20px;border-radius:6px;font-weight:300;font-size:14px;line-height:1.4;white-space:pre-wrap;-webkit-font-smoothing:subpixel-antialiased}.sc-message--file-name[data-v-5d8a7a52]{color:#fff;padding-left:15px;padding-right:15px;padding-top:0;font-size:x-small;text-align:center}.sc-message--file-name a[data-v-5d8a7a52]{text-decoration:none;color:#ece7e7}.sc-message--file-name a[data-v-5d8a7a52]:hover{color:#fff}.sc-message--content.sent .sc-message--file-text[data-v-5d8a7a52]{color:#fff;background-color:#4e8cff;word-wrap:break-word}.sc-message--content.received .sc-message--file[data-v-5d8a7a52]{color:#263238;background-color:#f4f7f9;margin-right:40px}.sc-message--content.received .sc-message--file-name[data-v-5d8a7a52]{color:#000}.sc-message--content.received .sc-message--file a[data-v-5d8a7a52]{color:#2b2828b3}.sc-message--content.received .sc-message--file a[data-v-5d8a7a52]:hover{color:#0c0c0c}\n")();
 const _sfc_main$j = {
   props: {
@@ -1754,7 +1754,7 @@ function _sfc_render$g(_ctx, _cache, $props, $setup, $data, $options) {
   ], 4);
 }
 var SystemMessage = /* @__PURE__ */ _export_sfc(_sfc_main$g, [["render", _sfc_render$g], ["__scopeId", "data-v-42f2c997"]]);
-var OptionMessage_vue_vue_type_style_index_0_scoped_true_lang = /* @__PURE__ */ (() => ".sc-message--text[data-v-7b48a70a]{padding:5px 20px;border-radius:6px;font-weight:300;font-size:14px;line-height:1.4;position:relative;-webkit-font-smoothing:subpixel-antialiased}.sc-message--text .sc-message--text-content[data-v-7b48a70a]{white-space:pre-wrap}.sc-message--text:hover .sc-message--toolbox[data-v-7b48a70a]{left:-20px;opacity:1}.sc-message--text .sc-message--toolbox[data-v-7b48a70a]{transition:left .2s ease-out 0s;white-space:normal;opacity:0;position:absolute;left:0px;width:25px;top:0}.sc-message--text .sc-message--toolbox button[data-v-7b48a70a]{background:none;border:none;padding:0;margin:0;outline:none;width:100%;text-align:center;cursor:pointer}.sc-message--text .sc-message--toolbox button[data-v-7b48a70a]:focus{outline:none}.sc-message--text .sc-message--toolbox[data-v-7b48a70a] svg{margin-left:5px}.sc-message--text code[data-v-7b48a70a]{font-family:Courier New,Courier,monospace!important}.sc-message--content.sent .sc-message--text[data-v-7b48a70a]{color:#fff;background-color:#4e8cff;max-width:calc(100% - 120px);word-wrap:break-word;border-radius:24px 24px 0}.sc-message--content.received .sc-message--text[data-v-7b48a70a]{color:#263238;background-color:#f4f7f9;margin-right:40px;border-radius:0 24px 24px}a.chatLink[data-v-7b48a70a]{color:inherit!important}input[data-v-7b48a70a]{box-sizing:border-box;border:1px solid #589bf6;filter:drop-shadow(0px 0px 5px rgba(42,107,246,.6));margin:.5em}input[data-v-7b48a70a]:checked{background:#589bf6}\n")();
+var OptionMessage_vue_vue_type_style_index_0_scoped_true_lang = /* @__PURE__ */ (() => ".sc-message--text[data-v-578a148f]{padding:5px 20px;border-radius:6px;font-weight:300;font-size:14px;line-height:1.4;position:relative;-webkit-font-smoothing:subpixel-antialiased}.sc-message--text .sc-message--text-content[data-v-578a148f]{white-space:pre-wrap}.sc-message--text:hover .sc-message--toolbox[data-v-578a148f]{left:-20px;opacity:1}.sc-message--text .sc-message--toolbox[data-v-578a148f]{transition:left .2s ease-out 0s;white-space:normal;opacity:0;position:absolute;left:0px;width:25px;top:0}.sc-message--text .sc-message--toolbox button[data-v-578a148f]{background:none;border:none;padding:0;margin:0;outline:none;width:100%;text-align:center;cursor:pointer}.sc-message--text .sc-message--toolbox button[data-v-578a148f]:focus{outline:none}.sc-message--text .sc-message--toolbox[data-v-578a148f] svg{margin-left:5px}.sc-message--text code[data-v-578a148f]{font-family:Courier New,Courier,monospace!important}.sc-message--content.sent .sc-message--text[data-v-578a148f]{color:#fff;background-color:#4e8cff;max-width:calc(100% - 120px);word-wrap:break-word;border-radius:24px 24px 0}.sc-message--content.received .sc-message--text[data-v-578a148f]{color:#263238;background-color:#f4f7f9;margin-right:40px;border-radius:0 24px 24px}a.chatLink[data-v-578a148f]{color:inherit!important}input[data-v-578a148f]{box-sizing:border-box;border:1px solid #589bf6;filter:drop-shadow(0px 0px 5px rgba(42,107,246,.6));margin:.5em}input[data-v-578a148f]:checked{background:#589bf6}\n")();
 const fmt = require("msgdown");
 const _sfc_main$f = {
   components: {},
@@ -1803,7 +1803,7 @@ const _sfc_main$f = {
   },
   methods: {
     edit() {
-      store.editMessage = this.message;
+      store.setStateS("editMessage", this.message);
     }
   }
 };
@@ -1853,7 +1853,7 @@ function _sfc_render$f(_ctx, _cache, $props, $setup, $data, $options) {
     ], true)
   ], 4);
 }
-var OptionMessage = /* @__PURE__ */ _export_sfc(_sfc_main$f, [["render", _sfc_render$f], ["__scopeId", "data-v-7b48a70a"]]);
+var OptionMessage = /* @__PURE__ */ _export_sfc(_sfc_main$f, [["render", _sfc_render$f], ["__scopeId", "data-v-578a148f"]]);
 var Loader_vue_vue_type_style_index_0_scoped_true_lang = /* @__PURE__ */ (() => ".loader[data-v-67a2236b]{border:6px solid #bed9ff;border-radius:50%;border-top:6px solid #2a6bf6;width:48px;height:48px;-webkit-animation:spin-67a2236b 2s linear infinite;animation:spin-67a2236b 1s linear infinite}@-webkit-keyframes spin-67a2236b{0%{-webkit-transform:rotate(0deg)}to{-webkit-transform:rotate(360deg)}}@keyframes spin-67a2236b{0%{transform:rotate(0)}to{transform:rotate(360deg)}}\n")();
 const _sfc_main$e = {};
 const _withScopeId = (n) => (pushScopeId("data-v-67a2236b"), n = n(), popScopeId(), n);

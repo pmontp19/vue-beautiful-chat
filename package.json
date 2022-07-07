@@ -1,6 +1,6 @@
 {
   "name": "@pmontp19/vue-beautiful-chat",
-  "version": "3.4.0-beta.5",
+  "version": "3.4.0",
   "description": "A simple and beautiful Vue chat component backend agnostic.",
   "main": "dist/vue-beautiful-chat.cjs.js",
   "module": "dist/vue-beautiful-chat.es.js",

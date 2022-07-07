@@ -28,9 +28,9 @@ const Plugin = {
     /**
      * Sets custom component name (if provided)
      */
+    Vue.use(compositionApi)
     Vue.component(this.componentName, Launcher)
     Vue.use(VTooltip)
-    Vue.use(compositionApi)
   }
 }
 

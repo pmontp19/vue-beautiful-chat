@@ -6,7 +6,7 @@
       :message-colors="messageColors"
       :me="me"
     >
-      <p class="sc-message--text-content" v-html="messageText"></p>
+      <p class="sc-message--text-content">{{ message.data.text }}</p>
       <form>
         <div v-for="(option, i) in message.data.options" :key="i">
           <input
@@ -34,14 +34,10 @@
 
 <script>
   import { mapState } from '../store/'
-  import escapeGoat from 'escape-goat'
-  import Autolinker from 'autolinker'
   import store from '../store/'
 
-  const fmt = require('msgdown')
-
   export default {
-    components: { },
+    components: {},
     props: {
       message: {
         type: Object,
@@ -62,26 +58,6 @@
         isConsolidated: false
       }
     },
-    computed: {
-      messageText() {
-        const escaped = escapeGoat.escape(this.message.data.text)
-
-        return Autolinker.link(this.messageStyling ? fmt(escaped) : escaped, {
-          className: 'chatLink',
-          truncate: { length: 50, location: 'smart' }
-        })
-      },
-      me() {
-        return this.message.author === 'me'
-      },
-      isEditing() {
-        return (
-          (store.state.editMessage && store.state.editMessage.id) ===
-          this.message.id
-        )
-      },
-      ...mapState(['showDeletion', 'showEdition'])
-    },
     watch: {
       optionPicked: function (newVal, oldVal) {
         if (newVal !== oldVal) {
@@ -89,11 +65,6 @@
         }
       }
     },
-    methods: {
-      edit() {
-        store.setStateS('editMessage', this.message)
-      }
-    }
   }
 </script>
 

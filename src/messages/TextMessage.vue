@@ -87,9 +87,10 @@
     computed: {
       messageText() {
         const escaped = escapeGoat.escape(this.message.data.text)
+        const received = this.message.author !== 'me'
 
         return Autolinker.link(this.messageStyling ? fmt(escaped) : escaped, {
-          className: 'chatLink',
+          className: `${received ? 'received' : 'sent'}`,
           truncate: { length: 50, location: 'smart' }
         })
       },
@@ -106,7 +107,7 @@
     },
     methods: {
       edit() {
-        store.setStateS('editMessage', this.message)
+        store.setState('editMessage', this.message)
       }
     }
   }
@@ -157,7 +158,6 @@
       font-family: 'Courier New', Courier, monospace !important;
     }
   }
-
   .sc-message--content.sent .sc-message--text {
     color: white;
     background-color: #4e8cff;
@@ -172,8 +172,11 @@
     margin-right: 40px;
     border-radius: 0px 24px 24px 24px;
   }
+</style>
 
-  a.chatLink {
-    color: inherit !important;
+<style>
+  a.received-url {
+    color: white;
+    word-break: break-word;
   }
 </style>

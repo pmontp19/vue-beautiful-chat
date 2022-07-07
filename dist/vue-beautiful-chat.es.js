@@ -11347,9 +11347,9 @@ const Plugin = {
         Plugin.dynamicContainer = dynamicContainer;
       }
     };
+    Vue.use(compositionApi);
     Vue.component(this.componentName, Launcher);
     Vue.use(plugin);
-    Vue.use(compositionApi);
   }
 };
 export { Plugin as default };

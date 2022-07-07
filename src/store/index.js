@@ -3,8 +3,7 @@
  * and instantiated externally
  **/
 
-import {reactive} from 'vue'
-import { set } from '@vue/composition-api'
+import { set, reactive } from '@vue/composition-api'
 
 const store = {
   state: reactive({

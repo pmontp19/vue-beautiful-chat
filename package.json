@@ -47,7 +47,8 @@
     "vite-plugin-vue2": "^2.0.1"
   },
   "peerDependencies": {
-    "@vue/composition-api": "^1.7.0"
+    "@vue/composition-api": "^1.7.0",
+    "vue": "^2"
   },
   "keywords": [
     "vue",

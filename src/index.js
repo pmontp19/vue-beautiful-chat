@@ -12,12 +12,14 @@ const Plugin = {
     if (this.installed) {
       return
     }
-    Vue.use(compositionApi)
 
     this.installed = true
     this.event = new Vue()
     this.dynamicContainer = null
     this.componentName = options.componentName || defaultComponentName
+
+    Vue.use(compositionApi)
+
     /**
      * Plugin API
      */

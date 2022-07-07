@@ -1,3 +1,4 @@
+import './installCompositionApi.js'
 import Launcher from './Launcher.vue'
 import VTooltip from 'v-tooltip'
 import compositionApi from '@vue/composition-api'

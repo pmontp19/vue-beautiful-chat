@@ -46,6 +46,9 @@
     "vite-plugin-css-injected-by-js": "^1.5.1",
     "vite-plugin-vue2": "^2.0.1"
   },
+  "peerDependencies": {
+    "@vue/composition-api": "^1.7.0"
+  },
   "keywords": [
     "vue",
     "vuejs",

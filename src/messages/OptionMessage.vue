@@ -33,8 +33,6 @@
 </template>
 
 <script>
-  import { mapState } from '../store/'
-  import store from '../store/'
 
   export default {
     components: {},
@@ -65,6 +63,16 @@
         }
       }
     },
+    created: function() {
+      if (this.message.data.consolidated) {
+        this.isConsolidated = true
+      }
+      const ret = this.deepSearch.getObjects(this.message, 'checked', true)
+      if (ret === 'undefined') {
+        return
+      }
+      this.optionPicked = ret[0].value
+    }
   }
 </script>
 

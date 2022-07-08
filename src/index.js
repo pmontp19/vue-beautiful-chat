@@ -2,6 +2,7 @@ import './installCompositionApi.js'
 import Launcher from './Launcher.vue'
 import VTooltip from 'v-tooltip'
 import compositionApi from '@vue/composition-api'
+import helpers from './helpers/index.js'
 
 const defaultComponentName = 'BeautifulChat'
 
@@ -34,6 +35,7 @@ const Plugin = {
      */
     Vue.component(this.componentName, Launcher)
     Vue.use(VTooltip)
+    Vue.use(helpers)
   }
 }
 

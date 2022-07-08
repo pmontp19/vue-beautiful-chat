@@ -68,8 +68,7 @@
         this.isConsolidated = true
       }
       const ret = this.deepSearch.getObjects(this.message, 'checked', true)
-      console.log(ret)
-      if (ret !== 'undefined' && ret[0].checked) {
+      if (ret.length !== 0) {
         this.optionPicked = ret[0].value
       }
       

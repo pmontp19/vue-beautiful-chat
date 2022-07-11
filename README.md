@@ -6,11 +6,11 @@ Forked from [Mattmezza](https://github.com/mattmezza/react-beautiful-chat)
 
 `vue-beautiful-chat` is porting to vue of `react-beautiful-chat` (which you can find [here](https://github.com/mattmezza/react-beautiful-chat))
 
-<a href="https://www.npmjs.com/package/vue-beautiful-chat" target="\_parent">
-  <img alt="" src="https://img.shields.io/npm/dm/vue-beautiful-chat.svg" />
+<a href="https://www.npmjs.com/package/@pmontp19/vue-beautiful-chat" target="\_parent">
+  <img alt="" src="https://img.shields.io/npm/dm/@pmontp19/vue-beautiful-chat.svg" />
 </a>
-<a href="https://github.com/mattmezza/vue-beautiful-chat" target="\_parent">
-  <img alt="" src="https://img.shields.io/github/stars/mattmezza/vue-beautiful-chat.svg?style=social&label=Star" />
+<a href="https://github.com/pmontp19/vue-beautiful-chat" target="\_parent">
+  <img alt="" src="https://img.shields.io/github/stars/pmontp19/vue-beautiful-chat.svg?style=social&label=Star" />
 </a>
 
 Go to [FAQ](#faq) ⬇️
@@ -175,6 +175,9 @@ export default {
     handleOnType() {
       console.log('Emit typing event')
     },
+    handleOption(e) {
+      console.log('Option choosed', e)
+    },
     editMessage(message) {
       const m = this.messageList.find((m) => m.id === message.id)
       m.isEdited = true
@@ -218,7 +221,7 @@ For more detailed examples see the demo folder.
 | ------ | -------------- | ------------------------------------------ |
 | onType | undefined      | Fires when user types on the message input |
 | edit   | `message`      | Fires after user edited message            |
-| option | `optionPicked` | Fires when user chooses an option          |
+| option | `optionPicked` | Fires when user chooses an option from OptionMessage type          |
 
 #### Slots
 
@@ -343,6 +346,28 @@ Message objects are rendered differently depending on their type. Currently, onl
     data: { text: 'Marcos se acaba de unir a la conversación', meta: '10.56', imageUrl: 'https://via.placeholder.com/150' }
   }
 }
+```
+
+#### OptionMessage
+
+It's possible to recover a previously answered option message. Use case: user refreshes or change to a route that rebuilds the entire page of components, and you store all chat variables (messages, participants...). 
+
+You can store `consolidated` varibale in the message data to indicate that has been answered and can be disabled, and also `checked` to indicate what was the option choosen. 
+
+```js
+{
+  type: 'options',
+  author: 'bot',
+  data: {
+    consolidated: true,
+    text: 'Question to ask',
+    options: [
+      { text: 'Option 1', value: '1' },
+      { text: 'Option 2', value: '2' },
+      { text: 'Option 3', value: '3', checked: true }
+    ]
+  },
+},
 ```
 
 #### Quick replies

@@ -16,7 +16,7 @@
             name="options"
             :value="option.value"
             :disabled="isConsolidated"
-            @click="isConsolidated = true"
+            @click="consolidate"
           />
           <label :for="option.value">{{ option.text }}</label>
         </div>
@@ -33,7 +33,6 @@
 </template>
 
 <script>
-
   export default {
     components: {},
     props: {
@@ -56,13 +55,6 @@
         isConsolidated: false
       }
     },
-    watch: {
-      optionPicked: function (newVal, oldVal) {
-        if (newVal !== oldVal) {
-          this.$emit('option', this.optionPicked)
-        }
-      }
-    },
     created: function() {
       if (this.message.data.consolidated) {
         this.isConsolidated = true
@@ -71,7 +63,14 @@
       if (ret.length !== 0) {
         this.optionPicked = ret[0].value
       }
-      
+    },
+    methods: {
+      consolidate() {
+        if (!this.isConsolidated) {
+          this.isConsolidated = true
+          this.$emit('option', this.optionPicked)
+        }
+      }
     }
   }
 </script>
